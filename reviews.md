@@ -11,17 +11,49 @@ You can discuss questions and ask for clarifications with your colleagues and/or
 We may select a random review to read and discuss in class.  This serves to highlight important characteristics of reading papers and writing good reviews.
 
 
+<!--
+[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
+
+Below are a few aspects of the readings to think about.  I have randomly assigned teams to think about each aspect.
+After I release paper reviews, discuss among your team what your consensus response will be.
+Teams will elect a leader to present their consensus in class.
+
+
+* Problem: 
+  * What problem is this idea/system solving?  Is that important?  Why?  Provide evidence.
+* State-of-the-art: 
+  * What was the previous state-of-the-art (in the same field or other fields)? How, and how much does this system advance state of art?   Justify with evidence.
+* How?   
+  * How does the idea/system work? What are the key insights? Provide concrete examples that highlight extreme design points.
+* Results: 
+  * How SHOULD the technique be evaluated?  How was the technique evaluated?   What were key results?
+* The Future: 
+  * What would follow-on research to this paper be?  Propose an actual design of the research.  e.g.,
+    * Improve an algorithm in the paper;   
+    * Find a new, significant evaluation question for it;   
+    * A brand-new way to address the same problem/goal. 
+* Applier:  
+  * Think beyond this paper.  What is the most different interesting application/use case that this paper (or its ideas) enables?  Justify.
+* Hater: 
+  * Identify the deepest weaknesses in the paper.  Identify flaws in both categories below, and describe how to address the weaknesses:
+    * The technical work: are there limitations or flawed assumptions?  Look for aspects that break the paper.  
+    * The presentation of the paper: look for poorly explained portions, logical inconsistencies, argumentation that is flawed.
+
+Structure borrowed from Ethan Katz Bassett’s course on Internet Service Delivery. 
+-->
+
 ### Submission
+
+Overview
+
+* Reviews are due **10AM EST day before lecture**.  
+* Late submissions are given a score of 0 without prior approval.  
+* You may miss submissions for up to **2 lectures**.
+* [Submission form](https://goo.gl/forms/uNfVx9jUBXdj6wXd2)
+
 
 The first reviews ([System R](#lec2), [Postgres](#lec3)) are special, so look at the paper description for submission details.  
 
-
-Otherwise, follow the following instructions: 
-
-* [Submission form](https://goo.gl/forms/uNfVx9jUBXdj6wXd2)
-* Reviews are due **10PM EST day before lecture**.  
-* Late submissions are given a score of 0 without prior approval.  
-* You may miss submissions for up to **2 lectures**.
 
 
 ### Reading Tips
@@ -61,7 +93,6 @@ Paper Review
 
 Submission
 
-* Due: 12PM Thursday 1/24 
 * [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
 
 
@@ -85,7 +116,6 @@ Paper Review
 
 Submission
 
-* Due 6PM EST day before lecture
 * [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
 
 
@@ -201,34 +231,7 @@ Readings
 * Optional: [Probabilistic Predicates](https://www.microsoft.com/en-us/research/publication/accelerating-machine-learning-queries-with-probabilistic-predicates/)
 
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
 
-Below are a few aspects of the readings to think about.  I have randomly assigned teams to think about each aspect.
-After I release paper reviews, discuss among your team what your consensus response will be.
-Teams will elect a leader to present their consensus in class.
-
-
-* Problem: Jennifer, Yiru
-  * What problem is this idea/system solving?  Is that important?  Why?  Provide evidence.
-* State-of-the-art: Dean, Alan
-  * What was the previous state-of-the-art (in the same field or other fields)? How, and how much does this system advance state of art?   Justify with evidence.
-* How?   Yiliang, Amita
-  * How does the idea/system work? What are the key insights? Provide concrete examples that highlight extreme design points.
-* Results: Maryam, Xiao
-  * How SHOULD the technique be evaluated?  How was the technique evaluated?   What were key results?
-* The Future: Haneen, Andrew
-  * What would follow-on research to this paper be?  Propose an actual design of the research.  e.g.,
-    * Improve an algorithm in the paper;   
-    * Find a new, significant evaluation question for it;   
-    * A brand-new way to address the same problem/goal. 
-* Applier:  Shikun, Xinyue
-  * Think beyond this paper.  What is the most different interesting application/use case that this paper (or its ideas) enables?  Justify.
-* Hater: Ziao, Siyang
-  * Identify the deepest weaknesses in the paper.  Identify flaws in both categories below, and describe how to address the weaknesses:
-    * The technical work: are there limitations or flawed assumptions?  Look for aspects that break the paper.  
-    * The presentation of the paper: look for poorly explained portions, logical inconsistencies, argumentation that is flawed.
-
-Structure borrowed from Ethan Katz Bassett’s course on Internet Service Delivery. 
 
 <a name='lec13' />
 ### Top-down Optimization    
@@ -237,18 +240,6 @@ Readings
 
 * Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
-
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Roles
-
-* Problem:  Dean, Amita
-* State-of-the-art:  Shikun, Yiru
-* How:  Haneen, Jennifer
-* Results:  Maryam, Yiliang
-* Future:  Xiao, Andrew
-* Applier:  Alan, Siyang
-* Hater:  Xinyue, Ziao
 
 
 <a name='lec14' />
@@ -269,18 +260,6 @@ Readings
 * Optional: [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
 -->
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Roles: Compare and contrast between the systems for your respective roles
-
-* Problem:  Maryam, Dean
-* State-of-the-art:  Jennifer
-* How:  Yiliang, Shikun
-* Results:  Alan, Xinyue
-* Future:  Haneen, Ziao
-* Applier:  Amita, Xiao
-* Hater:  Yiru, Siyang
-
 
 <a name='lec14' />
 ### Large-scale Data Flow 2
@@ -290,18 +269,6 @@ Readings
 * Required: [RDDs](https://sfu-db.github.io/dbsystems/Papers/nsdi12-final138.pdf)
 * Required: [SparkSQL](https://sfu-db.github.io/dbsystems/Papers/SparkSQLSigmod2015.pdf)
 * Optional: [DyadLinq](http://michaelisard.com/pubs/sigmod09.pdf)
-
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Roles.  Continue to work on prioritizing the most important points (depth) over summarizing (breadth).  Be sure to justify your choices.
-
-* Problem:  Yiliang, Ziao
-* State-of-the-art:  Maryam, Xinyue
-* How:  Siyang, Amita
-* Results:  Yiru, Xiao
-* Future:  Alan, Jennifer
-* Applier:  Shikun, Dean
-* Hater:  Haneen
 
 
 
@@ -315,23 +282,11 @@ Readings
 * Optional: [Earlier CIDR paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/differentialdataflow.pdf)
 * Optional: [Timely Dataflow](https://github.com/TimelyDataflow/timely-dataflow)
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Some notes to guide your reading and thinking.  You should still focus on your roles.
+Some notes to guide your reading and thinking.  
 
 * This paper focuses primarily on what Naiad provides and how it works.  But which are actually _necessary_?  Which are nice-to-haves?  Why?  How does it contrast with other papers we have read (spark, spark streaming, recursive queries)?  Can it do things other systems cannot?   
 * What makes this paper easy or hard to read?  Note those, and other questions you have, in the comments, and we can discuss in class
 * We will go over some of the technical details of how execution operates
-
-Roles: 
-
-* Problem:  Yiru, Shikun
-* State-of-the-art:  Yiliang, Dean
-* How:  Xinyue, Alan
-* Results:  Jennifer, Ziao
-* Future:  Amita, Siyang
-* Applier:  Haneen, Maryam
-* Hater:  Xiao
 
 
 <a name='lec17' />
@@ -343,21 +298,9 @@ Readings
 * Required: [Datalog and Recursive Query Processing](https://www.nowpublishers.com/article/Details/DBS-017) Chapters 2, 3
 * Optional: [Evita Raced: Metacompilation for Declarative Networks](http://www.vldb.org/pvldb/1/1453978.pdf): query optimization AS datalog
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
 Questions
 
 * When you assess the reading, compare against other formal and informal data query languages we have encountered.  
-
-Roles
-
-* Problem:  Haneen, Xiao
-* State-of-the-art:  Siyang, Alan
-* How:  Ziao, Maryam
-* Results:  Amita, Shikun
-* Future:  Yiliang, Yiru
-* Applier:  Jennifer, Xinyue
-* Hater:  Dean, Alan
 
 
 
@@ -369,21 +312,10 @@ Readings:
 * Required: [Provenance Semirings](http://users.ics.forth.gr/~gregkar/publications/pods2007.pdf)
 * Optional: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
 
 Question to comment on:
 
 * Provenance goes beyond what they mention in the paper and is _everywhere_.  Point out a concept/functionality in the real (or digital) world that can be recast as provenance and provenance queries.  Describe it.
-
-Roles
-
-* Problem:  Alan, Siyang
-* State-of-the-art:  Xiao, Ziao
-* How:  Yiru
-* Results:  Haneen, Dean
-* Future:  Shikun, Maryam
-* Applier:  Yiliang
-* Hater:  Amita, Jennifer
 
 
 <a name='lec20' />
@@ -401,17 +333,6 @@ Readings:
 * Required: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
 * Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Roles 
-
-* Problem:  Xinyue, Jennifer
-* State-of-the-art:  Haneen, Amita
-* How:  Xiao, Ziao
-* Results:  Siyang
-* Future:  Dean, Alan
-* Applier:  Yiru, Shikun
-* Hater:  Yiliang, Maryam
 
 
 <a name='lec24' />
@@ -423,9 +344,7 @@ Roles
 * Optional: [Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets](https://cscheid.net/static/papers/infovis_gaussian_cubes_2016.pdf)
 
 
-At this point, you have focused on specific reviewer roles as part of reviewing.   For this paper and the rest of the semester, your reviews should be full paper reviews, where it hits upon each of the roles above.  
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 
 <a name='lec25' /> 
 ### Visualization/Sampling
@@ -433,7 +352,6 @@ At this point, you have focused on specific reviewer roles as part of reviewing.
 * Required: [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
 * Optional: [Dynamic Sample Selection for Approximate Query Processing](http://www-cs-students.stanford.edu/~babcock/papers/sampling.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 
 
 <a name='lec26' /> 
@@ -444,7 +362,6 @@ At this point, you have focused on specific reviewer roles as part of reviewing.
 * Optional: [Query-based Workload Forecasting for Self-Driving Database Management Systems](https://www.cs.cmu.edu/~dvanaken/papers/forecasting-sigmod18.pdf)
 * Optional: [Database Cracking](https://stratos.seas.harvard.edu/files/IKM_CIDR07.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 
 
 <!--
@@ -473,7 +390,6 @@ At this point, you have focused on specific reviewer roles as part of reviewing.
 * Optional: [Provenance for Interacive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 
 <a name='lec29' />
 ### Fast Scans
@@ -483,7 +399,6 @@ At this point, you have focused on specific reviewer roles as part of reviewing.
 * Optional: [Vectorizing Database Column Scans with Complex Predicates](http://www.adms-conf.org/2013/muller_adms13.pdf)
 
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 
 
 <a name='lec30' />
@@ -492,5 +407,4 @@ At this point, you have focused on specific reviewer roles as part of reviewing.
 * Required: [Querying and Creating Visualizations by Analogy](http://www.cs.utah.edu/~juliana/pub/tvcg-analogy2007.pdf)
 * Optional: [VisTrails: Enabling Interactive Multiple-View Visualizations](https://vgc.poly.edu/~juliana/pub/vistrails-vis2005.pdf)
 
-[SUBMIT YOUR REVIEW HERE](https://forms.gle/UuzkAX4cktEofrqXA)
 

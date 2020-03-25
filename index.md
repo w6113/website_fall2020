@@ -9,7 +9,7 @@ Data management systems are the corner-stone of modern applications, businesses,
 
 The class places a heavy emphasis on paper reading and writing good paper reviews. The point is to practice reading papers critically, writing proper reviews, implementing ideas in research papers, and conducting research. As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.
 
-You should ideally be comfortable with  reading code that is not yours, open to trying different software systems, and willing to actively participate in and lead discussions.
+Ideally, you will be comfortable with reading code that is not yours, open to trying different software systems, and willing to actively participate in and lead discussions.
 
 <small style="color: grey">Course capped at 25. </small>
 
@@ -67,6 +67,7 @@ You should ideally be comfortable with  reading code that is not yours, open to 
 
 
 
+<!--
 #### Tentative list of papers for last lectures
 
 * Approx Query Processing
@@ -89,7 +90,7 @@ You should ideally be comfortable with  reading code that is not yours, open to 
     * Vertexica
     * RecStep
   * Vis in SQL
-
+-->
 
 
 <!--
