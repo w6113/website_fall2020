@@ -2,20 +2,8 @@
 layout: page
 ---
 
-<center>(This page is in flux)</center>
-
-#### Overview
-
-Topics will likely include:
-
-* High performance, data-intensive systems (e.g., Spark, HTAP/OLAP, Streaming, ML systems)
-* Modern data cleaning (e.g., integration, quantitative cleaning, data fusion)
-* Data-intensive visualization (e.g., [DVMS](https://cudbg.github.io/lab/), approximation, exploration)
-* Collaborative data analytics (e.g., data lakes)
 
 #### Course Expectations
-
-What I expect from You
 
 * Students are expected to *actively participate* in class discussions; participation is mandatory.
 * Students should be comfortable reading research papers; you will read, answer questions, and comment on the readings before class.
@@ -26,19 +14,20 @@ What I expect from You
 #### Participation
 
 Participation is mandatory.  
+
+
 Since the course is small, it is expected that students will help contribute to the in person and online discussions.  This includes:
 
 * Asking and answering questions related to the class's readings and lectures.  
 * Making observations about the lecture's relationship with products or society 
 * Asking and answering questions on piazza
 
-**Students that do not actively participate will receive a 0 in the course**.
 
 
 <a name="reading"></a>
 #### Paper Reviews (every class)
 
-See [./reviews](./reviews) for a description and expectations for paper reviews.
+See [./papers](./papers) for a description and expectations for paper reviews.
 
 
 
@@ -70,7 +59,7 @@ A corallory is that your conduct is respectful and encouraging to your fellow st
 <a name="ec"></a>
 #### Extra Credit
 
-The purpose of extra credit is to reward learning and doing cool stuff.  Propose activities that the course doesn't cover nor force you to do, and convince me how much extra credit (up to 10%) you should receive.  Some _possible directions_:
+Propose an extra credit activity and convince me how much extra credit (up to 10%) you should receive.  Some _possible directions_:
 
 * apply diffusion of innovation, or any other adoption theory, to a subarea of databases.  Present it
 * suggest an above-and-beyond target for your project

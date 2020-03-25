@@ -57,7 +57,7 @@ Ideally, you will be comfortable with reading code that is not yours, open to tr
       {% endif %}
     </td>
     <td class="readings">
-      <a href="./reviews#lec{{idx}}">Readings</a>
+      <a href="./papers#lec{{idx}}">Readings</a>
     </td>
     <td>{{r.assigned | safe}}</td>
     <td>{{r.due | safe}}</td>

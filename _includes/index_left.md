@@ -6,7 +6,7 @@
 * [Syllabus](./syllabus)
 * [Slack](#)
 * [Project](./projects)
-* [Papers](./reviews)
+* [Papers](./papers)
 
 
 #### Prereqs
