@@ -5,31 +5,17 @@ layout: index
 
 #### Overview
 
-This course is intended as an advanced graduate-level course in database systems research.  
-The content will cover classic and modern database systems research.  Topics will range from classic database system design, modern optimizations in single-node and multi-node settings, data cleaning and explanation, and data provenance.
+Data management systems are the corner-stone of modern applications, businesses, and science (including data).  If you were excited by the topics in 4111,  this graduate level course in database systems research will be a deep dive into classic and modern database systems research.  Topics will range from classic database system design, modern optimizations in single-machine and multi-machine settings, data cleaning and quality, and application-oriented databases.
 
-The class places a _heavy emphasis on paper reading and writing good paper reviews_.   The point is to practice reading papers critically, writing proper reviews, implementing ideas in research papers, and conducting research.  As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.
+The class places a heavy emphasis on paper reading and writing good paper reviews. The point is to practice reading papers critically, writing proper reviews, implementing ideas in research papers, and conducting research. As such, students will be expected to read papers in depth, complete assignments based ideas from the readings, and conduct a semester-long research project.
 
-Students are expected to be comfortable with a range of programming languages, reading code, actively participate in discussions, and presenting.
+You should ideally be comfortable with  reading code that is not yours, open to trying different software systems, and willing to actively participate in and lead discussions.
 
-<small style="color: grey">Course capped at 25.  If waitlist is huge, an assignment will be used to choose participants.</small>
+<small style="color: grey">Course capped at 25. </small>
 
 
 
 #### Recent Announcements
-
-* [Submit Camera Ready on CMT website](https://cmt3.research.microsoft.com/W61132019/) by 5/10 11:59PM EST
-* Link to [list of your reviews this semester](./exreviews).
-* Project submissions updated
-  * Presentations on May 2nd in class.  10 minutes per group
-  * Project reports due May 10th 11:59PM EST.
-* Added [submission form for PC Meeting reflection](https://forms.gle/wmqKEU1AW4bMs3G4A), due Sat 4/6 11:59PM
-* Paper Draft due date has been moved to March 22nd, and PC Reviews to March 29th.
-* Due to popular request, paper reviews can be turned in 10PM EST day before class.
-* Updated [Projects page](./projects) with project milestones and a few example projects.
-* Uploaded [list of students that successfully completed HW0 and can enroll in the course](./md5s)
-* [Sign up to lead a lecture/paper discussion](https://piazza.com/class/jpqearvq2qq201?cid=11)
-* Added page for [paper reviews](./reviews)
 
 #### Schedule
 
