@@ -17,7 +17,7 @@ Ideally, you will be comfortable with reading code that is not yours, open to tr
 
 #### Recent Announcements
 
-#### Schedule
+#### Tentative Schedule
 
 
 <style>
