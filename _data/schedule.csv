@@ -1,0 +1,32 @@
+color,date,slug,link,presenter,readings,optional,assigned,due
+#fdf3fd,,Intro,./lecs/01_intro,,,,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/hw0.md"">HW0</a> (weds)",
+#fdf3fd,,System R overview,./lecs/02_dbprimer,,"<a href=""./files/papers/systemr-retrospective.pdf"">System R Retrospective</a>","<a href=""./files/papers/ingres-retrospective.pdf"">Ingres Design</a>",,HW0 1/27 11:59PM
+white,,Ingres/Postgres,./lecs/03_postgres,,,,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/hw1.md"">HW1</a> (weds)",
+white,,Column Stores,./lecs/04_colstore,,,,,
+#fdf3fd,,OLTP engines,./lecs/05_hstore,,,,,
+#fdf3fd,,Query Compilation,./lecs/06_qcomp,,,,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/hw2.md"">HW2</a> ",HW1
+white,,Multi-dim Indexes,./lecs/07_index,,,,,
+white,,Single machine joins,,,,,,"<a href=""https://w6113.github.io/projects"">Prospectus</a>"
+#fdf3fd,,Distributed joins,,,,,,
+#fdf3fd,,Volcano Exchange,,,,,,
+white,,Eddies,,,,,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/hw3.md"">HW3</a>",HW2
+white,,Hybrid Caching/UDFs,,,,,,
+#fdf3fd,,Volcano/Cascades Optimizer,,,,,,
+#fdf3fd,,Large-scale Dataflow Basics,,,,,,
+#fdf3fd,,Large-scale Dataflow Basics2,,,,,,
+white,,Naiad,./lecs/16_naiad,,,,,HW3
+white,,-,,,,,,Paper Draft Due
+white,,Datalog and Recursion,./lecs/18_datalog,,,,,
+#fdf3fd,,Lineage,,,,,,
+white,,-,,,,,,PC Reviews
+white,,Mock PC,,,,,,Mock PC
+white,,Mock PC,,,,,,Mock PC
+#fdf3fd,,Materialized Views,,,,,,
+#fdf3fd,,Datacubes,,,,,,
+white,,Visualization/Exploration,,,,,,
+white,,Self-tuning DBs,,,,,,
+#fdf3fd,,More Lineage,,,,,,
+#fdf3fd,,Fast Scans,,,,,,
+white,,Using Lineage,,,,,,
+white,,Presentations (10 min/group),,,,,,Presentations (10 min/group
+#fdf3fd,,,,,,,,Project Report

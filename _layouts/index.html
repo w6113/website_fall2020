@@ -1,0 +1,31 @@
+<html>
+   <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{ "/files/css/bootstrap.min.css" | relative_url }}" />
+    <link rel="stylesheet" type="text/css" href="{{ "/files/css/style.css" | relative_url }}" />
+    <script src="{{ "/files/js/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/handlebars.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/underscore.js" | relative_url }}"></script>
+    <script src="{{ "/files/js/bootstrap.min.js" | relative_url }}"></script>
+  </head>
+<body>
+
+{% include header.html %}
+
+
+<div class="row content" style="margin-top: 2em;">
+  <div class="col-md-2 col-md-offset-1">
+		{% capture index_left %}{% include index_left.md %}{% endcapture %}
+		{{ index_left | markdownify }}
+	</div>
+  <div class="col-md-8">
+		{{ content }}
+  </div>
+  <div class="joiner"></div>
+</div>
+
+{% include footer.html %}
+
+</body>

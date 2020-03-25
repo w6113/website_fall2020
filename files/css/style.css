@@ -1,0 +1,168 @@
+/* Page structure */
+
+body {
+  margin: 0px;
+  color: black;
+  background-color: white;
+  font: normal normal 17px/24px Roboto, Arial, sans-serif;
+  width: 99%;
+  padding: 0px;
+}
+
+.container {
+}
+
+
+.largeheader {
+  background-color: #e4f9ff;
+  background-color: #ffe4fc;
+  color: black;
+  padding: 1em 1em 0.25em 1em;
+  border-bottom: 3px solid #2f908c;
+  border-bottom: 3px solid #750e6a;
+}
+
+
+.footer {
+  background-color: #ffe4fc;
+  border-top: 3px solid #750e6a;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 2em;
+  padding: 0.75em 1em;
+  font-size: .8em;
+  font-style: italic;
+  text-align: center;
+  clear: both;
+}
+
+body.coursenotes {
+  background-color: white;
+}
+
+body.coursenotes .container {
+  border: none;
+}
+
+#contents {
+  background: #f5eeee;
+  font-size: 80%;
+  margin-top: 30px;
+  padding: 0px;
+  max-width: 360px;
+}
+
+#contents div:first-child {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 0;
+  padding: 3px 10px;
+  background-color: #baa;
+  color: white;
+  text-shadow: 1px 1px 0 #766;
+}
+
+#contents div:nth-child(0n+2) {
+  padding: 5px 10px;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: .02ex;
+  line-height: 100%;
+  text-align: left;
+}
+
+h1 {
+  color: #113;
+  padding: 0 0 0.1em 0;
+  font-size: 35px;
+}
+
+h2 {
+  padding: 28px 0 0.12px 0;
+  margin-top: 0.8em;
+  font-size: 30px;
+  font-weight: bold;
+  color: #016;
+}
+
+h3 {
+  padding: 0.3em 0 0.15em 0;
+  margin-top: 0.7em;
+  font-size: 25px;
+  font-weight: bold;
+  color: #825;
+}
+
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	padding: 0.1em;
+	margin-top: 0.8em;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+ul ul {
+  padding-left: 1em;
+}
+
+.abstract, header {
+  border-top: 2px solid #b46;
+  border-bottom: 2px solid #b46;
+  padding: 12px 0;
+  font-style: italic;
+  color: #666;
+}
+
+.title {
+  font-family: Arial, sans-serif;
+  line-height: 1em;
+  font-size: 200%;
+  font-weight: bold;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.subtitle {
+  font-family: Arial, sans-serif;
+  font-size: 150%;
+  padding-bottom: 0.6em;
+  letter-spacing: .2ex;
+}
+
+.deco {
+  font-family: Verdana, Arial, sans-serif;
+  letter-spacing: 1.2ex;
+}
+
+
+p.centered, div.centered {
+  text-align: center;
+}
+
+
+
+div.joiner {
+  clear: both;
+}
+
+a {
+  color: #b133b7;
+}
+
+@media only screen and (max-width: 989px) { 
+  body, p {
+    font-size: 18pt;
+  }
+  .container {
+    width: 60%;
+  }
+  .content {
+    margin: none;
+    padding: 1em;
+  }
+
+}
