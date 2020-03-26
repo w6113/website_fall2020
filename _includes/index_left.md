@@ -1,8 +1,8 @@
 #### Information 
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
-  <small>OH: TBA in 421 Mudd</small>   
-* Class: TBA
+  <small>OH: 1:15-2PM in 421 Mudd</small>   
+* Class: T/Th 11:30-1PM
 * [Syllabus](./syllabus)
 * [Slack](#)
 * [Project](./projects)
