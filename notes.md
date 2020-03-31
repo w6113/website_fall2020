@@ -1,9 +1,13 @@
 
 Topics
 
-* To enroll in the class
-  * Codd's paper?
-  * Do an assignmet
+* To enroll in the class answer background questions about basic 4111 knwoledge:
+  * query optimization
+  * relational algebra
+  * indexes
+
+
+
 * Classic DB Architecture
   * architecture of a database system
   * System R retrospective
