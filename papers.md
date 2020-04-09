@@ -278,6 +278,8 @@ Readings
 Readings
 
 * Required: [Naiad: A Timely Dataflow System](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/11/naiad_sosp2013.pdf)
+  * [A video introduction to Timely](https://www.youtube.com/watch?v=yOnPmVf4YWo)
+  * Timely is now a company called Materialized.  [Try their software!](https://materialize.io/)
 * Optional: [Discretized Streams](https://people.csail.mit.edu/matei/papers/2013/sosp_spark_streaming.pdf)
 * Optional: [Earlier CIDR paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2013/01/differentialdataflow.pdf)
 * Optional: [Timely Dataflow](https://github.com/TimelyDataflow/timely-dataflow)
