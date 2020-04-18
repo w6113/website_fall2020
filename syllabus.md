@@ -10,6 +10,8 @@ layout: page
 * Students should be comfortable coding data processing systems;  familiarity with database query execution, some machine learning, and algorithms is expected.
 * Students should be comfortable conducting a research project and writing up the results in a research paper format.
 
+    
+
 <a name="participation"></a>
 #### Participation
 
@@ -66,6 +68,39 @@ Propose an extra credit activity and convince me how much extra credit (up to 10
 * learn a topic/system/etc not covered and teach us
 * implement a paper/idea 
 * _your crazy idea here_
+
+
+
+<a name="faq"></a>
+#### FAQ
+
+
+What's the relationship between the different database courses?  (solid lines are prereqs, dashed lines are recommended).
+
+<center style="margin-bottom:2em"><img src="/files/images/courses.png" style="width:400px"/></center>
+
+What's the difference from [W6111 Advanced Database Systems](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html)?
+
+* Both [6111](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html) and this class (6113) are continuations of W4111, in that they dive deeper into the research
+  literature and more advanced topics.  6111 focuses a lot on information retrieval and the web 
+  (essentially, viewing the web as a big "database").  This class focuses on the research
+  and design of database internals and systems design.  
+  Take a look at the readings for both classes to get a better sense of the difference!
+
+What's the difference from [W4112 Database System Implementation](http://www.cs.columbia.edu/~kar/4112s18/)?
+
+* 4112 is a continuation of 4111.  It dives deeper into the topics typically mentioned in the second half of 4111, such as indexing, query optimization, transactions and concurrency control, and durability.
+  This class covers more "established" content, and primarily follows the "Database Management Systems" textbook by Raghu Ramakrishnan and Johannes Gehrke.  
+  In contrast, 6113 is heavily oriented around reading research papers and conducting research.  
+  We may read some of the research literature that ultimately led to some of the ideas covered in 4112, but will also cover more
+  advanced database systems research as well.
+
+
+Can I take both 6111 and 6113 for credit?
+
+* Yes.
+
+
 
 
 ## Collaboration/Copying Policy

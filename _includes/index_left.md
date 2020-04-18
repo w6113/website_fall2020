@@ -3,7 +3,7 @@
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
   <small>OH: 1:15-2PM in 421 Mudd</small>   
 * Class: T/Th 11:30-1PM
-* [Syllabus](./syllabus)
+* [Syllabus & FAQ](./syllabus)
 * [Slack](#)
 * [Project](./projects)
 * [Papers](./papers)
