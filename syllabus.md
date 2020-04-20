@@ -80,15 +80,15 @@ What's the relationship between the different database courses?
 
 <center style="margin-bottom:2em"><img src="/files/images/courses.png" style="width:400px"/></center>
 
-What's the difference from [W6111 Advanced Database Systems](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html)?
+What's the difference from [6111 Advanced Database Systems](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html)?
 
-* Both [6111](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html) and this class (6113) are continuations of W4111, in that they dive deeper into the research
+* Both [6111](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html) and this class (6113) are continuations of 4111, in that they dive deeper into the research
   literature and more advanced topics.  6111 focuses a lot on information retrieval and the web 
   (essentially, viewing the web as a big "database").  This class focuses on the research
   and design of database internals and systems design.  
 * Take a look at the readings for both classes to get a better sense of the difference!
 
-What's the difference from [W4112 Database System Implementation](http://www.cs.columbia.edu/~kar/4112s18/)?
+What's the difference from [4112 Database System Implementation](http://www.cs.columbia.edu/~kar/4112s18/)?
 
 * 4112 is a continuation of 4111.  It dives deeper into the topics typically mentioned in the second half of 4111, such as indexing, query optimization, transactions and concurrency control, and durability.
   This class primarily covers more "established" content found in database management textbooks, and may sometimes refer to papers when appropriate.
