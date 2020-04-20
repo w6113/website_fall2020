@@ -78,7 +78,7 @@ Propose an extra credit activity and convince me how much extra credit (up to 10
 What's the relationship between the different database courses?
 (solid lines are prereqs, <span style="color:blue; text-decoration: underline; text-decoration-style: dashed">blue dashed lines</span> are recommended).
 
-<center style="margin-bottom:2em"><img src="/files/images/courses.png" style="width:400px"/></center>
+<center style="margin-bottom:2em"><img src="https://github.com/w6113/w6113.github.io/raw/master/files/images/courses.png" style="width:400px"/></center>
 
 What's the difference from [6111 Advanced Database Systems](http://www.cs.columbia.edu/~gravano/cs6111/schedule.html)?
 
