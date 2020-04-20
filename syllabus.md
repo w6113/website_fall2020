@@ -90,7 +90,7 @@ What's the difference from [W6111 Advanced Database Systems](http://www.cs.colum
 What's the difference from [W4112 Database System Implementation](http://www.cs.columbia.edu/~kar/4112s18/)?
 
 * 4112 is a continuation of 4111.  It dives deeper into the topics typically mentioned in the second half of 4111, such as indexing, query optimization, transactions and concurrency control, and durability.
-  This class covers more "established" content, and primarily follows the "Database Management Systems" textbook by Raghu Ramakrishnan and Johannes Gehrke.  
+  This class primarily covers more "established" content found in database management textbooks, and may sometimes refer to papers when appropriate.
   In contrast, 6113 is heavily oriented around reading research papers and conducting research.  
   We may read some of the research literature that ultimately led to some of the ideas covered in 4112, but will also cover more
   advanced database systems research as well.
