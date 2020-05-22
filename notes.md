@@ -5,6 +5,7 @@ Topics
   * query optimization
   * relational algebra
   * indexes
+  * Entity resolution: https://www.youtube.com/watch?v=2Drw9plALIM
 
 
 
