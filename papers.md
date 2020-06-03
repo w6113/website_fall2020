@@ -75,7 +75,7 @@ Ask the following questions while readings
 # The Papers
 
 
-<a name="lec2"/>
+<a name="sysr"/>
 ### System R Overview 
 
 Readings 
@@ -96,7 +96,7 @@ Submission
 * [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
 
 
-<a name='lec3' />
+<a name='postgres' />
 ### INGRES/POSTGRES    
 
 Readings
@@ -120,7 +120,7 @@ Submission
 
 
 
-<a name='lec4' />
+<a name='colstore' />
 ### Column Stores    
 
 Readings
@@ -135,7 +135,7 @@ Readings
 
 
 
-<a name='lec5' />
+<a name='oltp' />
 ### OLTP Stores    
 
 Readings
@@ -146,7 +146,7 @@ Readings
 
 
 
-<a name='lec6' />
+<a name='compilation' />
 ### Query Compilation    
 
 Readings
@@ -162,7 +162,7 @@ Some things to think about when reading
 * For disk-based systems, when would query compilation be useful?
 
 
-<a name='lec7' />
+<a name='indexes' />
 ### Indexes    
 
 Readings
@@ -177,7 +177,7 @@ Some things to think about:
 
 
 
-<a name='lec8' />
+<a name='join' />
 ### Joins   
 
 Readings
@@ -187,7 +187,7 @@ Readings
 
 
 
-<a name='lec9' />
+<a name='distjoin' />
 ### Distributed Joins    
 
 Readings
@@ -197,7 +197,7 @@ Readings
 * Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt)
 
 
-<a name='lec10' />
+<a name='exchange' />
 ### Exchange Operator    
 
 Readings
@@ -205,7 +205,7 @@ Readings
 * Required: [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
 * Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
 
-<a name='lec11' />
+<a name='eddies' />
 ### Eddies  
 
 Readings
@@ -220,7 +220,7 @@ Address the following in your review's details:
   * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
   * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
 
-<a name='lec12' />
+<a name='udfs' />
 ### Hybrid Caching/UDFs    
 
 Readings
@@ -233,7 +233,7 @@ Readings
 
 
 
-<a name='lec13' />
+<a name='cascades' />
 ### Top-down Optimization    
 
 Readings
@@ -242,7 +242,7 @@ Readings
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
 
 
-<a name='lec14' />
+<a name='dataflow1' />
 ### Large-scale Data Flow
 
 Readings
@@ -261,7 +261,7 @@ Readings
 -->
 
 
-<a name='lec14' />
+<a name='dataflow2' />
 ### Large-scale Data Flow 2
 
 Readings
@@ -272,7 +272,7 @@ Readings
 
 
 
-<a name='lec16' />
+<a name='naiad' />
 ### Minibatch/incremental Dataflow
 
 Readings
@@ -291,8 +291,7 @@ Some notes to guide your reading and thinking.
 * We will go over some of the technical details of how execution operates
 
 
-<a name='lec17' />
-<a name='lec18' />
+<a name='datalog' />
 ### Datalog and Recursion   
 
 Readings
@@ -306,7 +305,7 @@ Questions
 
 
 
-<a name='lec19' />
+<a name='lineage' />
 ### Lineage   
 
 Readings:
@@ -320,8 +319,7 @@ Question to comment on:
 * Provenance goes beyond what they mention in the paper and is _everywhere_.  Point out a concept/functionality in the real (or digital) world that can be recast as provenance and provenance queries.  Describe it.
 
 
-<a name='lec20' />
-<a name='lec21' />
+<a name='mockpc' />
 ### MockPC  
 
 Readings:
@@ -329,7 +327,7 @@ Readings:
 * Your assigned papers
 
 
-<a name='lec22' />
+<a name='matviews' />
 ### Materialized Views    
 
 * Required: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
@@ -337,7 +335,7 @@ Readings:
 
 
 
-<a name='lec24' />
+<a name='datacubes' />
 ### Data Cubes    
 
 * Required: [Data Cube](./files/papers/datacube-jimgray.pdf)
@@ -347,8 +345,16 @@ Readings:
 
 
 
+<a name="pvd"/>
+### Physical Database Design
 
-<a name='lec25' /> 
+* TBA
+
+<a name="optional" />
+## Optional Topics (not on schedule)
+
+
+<a name='sampling' /> 
 ### Visualization/Sampling
 
 * Required: [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
@@ -356,7 +362,7 @@ Readings:
 
 
 
-<a name='lec26' /> 
+<a name='selftuning' /> 
 ### Self-tuning DBs  
 
 * Required: [Self-Tuning Database Systems: A Decade of Progress ](./files/papers/selftuning-chaudhuri-vldb07.pdf)
@@ -366,8 +372,7 @@ Readings:
 
 
 
-<!--
-<a name='lec25' />
+<a name='aqp' />
 ### Approximate Query Processing
 
 
@@ -375,17 +380,16 @@ Readings:
 * Optional: [Pfunk-H](https://columbiaviz.github.io/files/papers/pfunk.pdf)
 * Optional: [Sample+Seek](https://columbiaviz.github.io/files/papers/sigmod16sampleseek.pdf)
 * Optional: [WanderJoin](https://columbiaviz.github.io/files/papers/wanderjoin.pdf)
--->
 
 
-<!--### ML in DB
+<a name="mlindb" />
+### ML in DB
 
 * Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
 * Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
 * Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
--->
 
-<a name='lec28' />
+<a name='lineage2' />
 ### Fast Lineage Systems
 
 * Required: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
@@ -393,7 +397,7 @@ Readings:
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
 
-<a name='lec29' />
+<a name='scans' />
 ### Fast Scans
 
 * Required: [BitWeaving](http://www.cs.wisc.edu/~jignesh/publ/BitWeaving.pdf)
@@ -403,7 +407,7 @@ Readings:
 
 
 
-<a name='lec30' />
+<a name='lineage3' />
 ### Using Lineage
 
 * Required: [Querying and Creating Visualizations by Analogy](http://www.cs.utah.edu/~juliana/pub/tvcg-analogy2007.pdf)

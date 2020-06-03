@@ -15,11 +15,11 @@ title: W6113 Research Project
 
 Percentages are of your total class grade.
 
-* Prospectus      (10%)
-* Paper Draft     (5%)
-* Mock PC           (5%)
-* Presentation    (10%)
-* Report           (40%)
+* Prospectus    10-01   (10%)
+* Paper Draft   10-29  (5%)
+* Mock PC       11-10 to 11-12    (5%)
+* Presentation  12-10  (10%)
+* Report        12-14   (40%)
 
 
 
@@ -33,7 +33,8 @@ Teams should consist of 1-3 people. In addition, if you have a project in mind, 
 Good class projects can vary dramatically in complexity, scope, and topic. The only requirement is that they be related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
 
 
-### Prospectus 
+<a name="prospectus" />
+### Prospectus
 
 Your research prospectus will contain an overview of the research problem, _your hypothesis_, first pass at related work, a description of how you plan to complete the project, and metrics to decide _if it worked_.   
 
@@ -186,7 +187,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 
 The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with databases/data management.  Projects often come in several flavors:
 
-0. Make DataBass better: extend DataBass in a significant way, and evaluate it against other systems.  For instance, support DSM/PAX, distributed execution, LLVM compilation, lineage, etc.  Code quality matters for this option.
+0. Make DataBass better: extend DataBass in a significant way, and evaluate it against other systems.  For instance, support DSM/PAX, Apache Arrow, distributed execution, LLVM compilation, lineage, etc.  Code quality matters for this option.
 1. Research project: model an unsolved problem, propose algorithmic solution, evaluate and report findings.
 2. Win: pick an existing useful application and a well-recognized metric (latency, prediction, etc) and win against the state of the art.
 3. Break and fix: implement a state of the art algorithm on real data, show that it doesn't actually work (results are poor, it's slow, etc), make it work.
@@ -195,3 +196,6 @@ The following are examples of possible projects -- they are by no means a comple
 
 
 
+Potential ideas
+
+* Apache Arrow is the defacto standard for moving data around.  Build an in-browser fast execution engine for apache arrow using asm and typed arrays.  You can assume that only foreign key joins are used (cardinality will not explode).
