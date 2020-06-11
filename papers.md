@@ -240,6 +240,8 @@ Readings
 
 * Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
+* Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
+* Optional: [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
 
 
 <a name='dataflow1' />
