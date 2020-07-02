@@ -195,7 +195,14 @@ The following are examples of possible projects -- they are by no means a comple
 5. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 
 
+<!--
 
 Potential ideas
 
 * Apache Arrow is the defacto standard for moving data around.  Build an in-browser fast execution engine for apache arrow using asm and typed arrays.  You can assume that only foreign key joins are used (cardinality will not explode).
+* query compiler to rust
+* RL across execution layers 
+* Some RL + data structure business
+
+
+-->

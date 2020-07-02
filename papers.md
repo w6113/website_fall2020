@@ -49,12 +49,12 @@ Overview
 * Reviews are due **10AM EST day before lecture**.  
 * Late submissions are given a score of 0 without prior approval.  
 * You may miss submissions for up to **2 lectures**.
-* [Submission form](https://goo.gl/forms/uNfVx9jUBXdj6wXd2)
+* To submit:
+  * [Go to the class wiki](https://github.com/w6113/w6113.github.io/wiki) and click on the appropriate topic
+  * Read the instructions at the top
+  * Add your reviews
 
-
-The first reviews ([System R](#lec2), [Postgres](#lec3)) are special, so look at the paper description for submission details.  
-
-
+<!--The first reviews ([System R](#lec2), [Postgres](#lec3)) are special, so look at the paper description for submission details.  -->
 
 ### Reading Tips
 
@@ -119,6 +119,22 @@ Submission
 * [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
 
 
+<a name='indexes' />
+### Indexes    
+
+Readings
+
+* Required: [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
+* Optional: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
+* Optional: [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
+* Optional: [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
+* Optional: [FITing-Tree](https://dl.acm.org/doi/pdf/10.1145/3299869.3319860)
+
+Some things to think about:
+
+* These papers extend indexes to consider multi-dimensional datasets.  Do they address the needs for modern data types (e.g., videos, images, books) and all the things we want to use this data for??  
+
+
 
 <a name='colstore' />
 ### Column Stores    
@@ -161,19 +177,6 @@ Some things to think about when reading
 
 * For disk-based systems, when would query compilation be useful?
 
-
-<a name='indexes' />
-### Indexes    
-
-Readings
-
-* Required: [R-Trees: A Dynamic Index Structure for Spatial Searching](./files/papers/rtree-gut84.pdf)
-* Optional: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
-* Optional: [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
-
-Some things to think about:
-
-* These papers extend indexes to consider multi-dimensional datasets.  Do they address the needs for modern data types (e.g., videos, images, books) and all the things we want to use this data for??  
 
 
 
@@ -242,6 +245,7 @@ Readings
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
 * Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
 * Optional: [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
+* Optional: [CH Benchmark](https://db.in.tum.de/research/projects/CHbenCHmark/index.shtml?lang=en)
 
 
 <a name='dataflow1' />
