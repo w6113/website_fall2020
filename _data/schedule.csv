@@ -1,30 +1,30 @@
 color,date,slug,link,notes,presenter,assigned,due
-#fdf3fd,Tue 09-08,Intro,,,,HW0,
-#fdf3fd,Thu 09-10,Review 1,,,,,HW0 
-white,Tue 09-15,Review 2,,,,HW1,
-white,Thu 09-17,Multi-dim Indexes,indexes,,,,
-#fdf3fd,Tue 09-22,Single machine joins,join,,,,
-#fdf3fd,Thu 09-24,Volcano Exchange,exchange,,,HW2,HW1
-white,Tue 09-29,Distributed joins,distjoin,,,,
-white,Thu 10-01,Volcano/Cascades Optimizer,cascades,,,,"<a href=""./projects#prospectus"">Prospectus</a>"
-#fdf3fd,Tue 10-06,Eddies,eddies,,,,
-#fdf3fd,Thu 10-08,Join Optimization,joinopt,,,,
-white,Tue 10-13,Column Stores,colstore,,,HW3,HW2
-white,Thu 10-15,Query Compilation,compilation,,,,
-#fdf3fd,Tue 10-20,Hybrid Caching/UDFs,udfs,,,,
-#fdf3fd,Thu 10-22,Large-scale Dataflow Basics,dataflow1,,,,
-white,Tue 10-27,Large-scale Dataflow Basics2,dataflow2,,,,HW3
-white,Thu 10-29,Differential Dataflow,naiad,,,,"<a href=""./midpoint"">Paper Draft Due</a>"
+#fdf3fd,Tue 09-08,Intro,,,wu,A0,
+#fdf3fd,Thu 09-10,Review,review1,,wu,A1,A0  (9/13 11:59pm)
+white,Tue 09-15,Multi-dim Indexes,indexes,,wu,,
+white,Thu 09-17,Single machine joins,join,,wu,A2,A1 (9/20 11:59pm)
+#fdf3fd,Tue 09-22,Distributed joins,distjoin,,,,
+#fdf3fd,Thu 09-24,Volcano Exchange,exchange,,,,
+white,Tue 09-29,Volcano/Cascades Optimizer,cascades,,,,
+white,Thu 10-01,Eddies,eddies,,,A3,"A2 (10/4 11:59pm)<br/><a href=""./projects#prospectus"">Prospectus</a>"
+#fdf3fd,Tue 10-06,Column Stores,colstore,,,,
+#fdf3fd,Thu 10-08,Cloud Analytics,cloudanalytics,,,,
+white,Tue 10-13,Query Compilation,compilation,"Bonus: DB seminar talk by <a href=""https://gatterbauer.name"">Wolfgang Gatterbauer</a> on <a href=""https://queryvis.com/"">QueryViz</a>",,A4,A3  (10/14 11:59pm)
+white,Thu 10-15,Hybrid Caching/UDFs,udfs,,,,
+#fdf3fd,Tue 10-20,Large-scale Dataflow 1,dataflow1,,,,
+#fdf3fd,Thu 10-22,Large-scale Dataflow 2,dataflow2,,,,
+white,Tue 10-27,Streaming DB Research,naiad,"No class, Prof Vasiliki talk at 4PM","<a href=""https://cs-people.bu.edu/vkalavri/"">Prof. Vasiliki (Boston U)</a>",,A4 (11/06 11:59pm)
+white,Thu 10-29,Materialized Views,matviews,,,,"<a href=""./midpoint"">Paper Draft Due</a>"
 #fdf3fd,Tue 11-03,-,,,,,
-#fdf3fd,Thu 11-05,Materialized Views,matviews,,,,PC Reviews
-white,Tue 11-10,Mock PC,mockpc,,,,Mock PC
-white,Thu 11-12,Mock PC,mockpc,,,,Mock PC
-#fdf3fd,Tue 11-17,Datalog and Recursion,datalog,,,,
-#fdf3fd,Thu 11-19,Lineage,lineage,,,,
-white,Tue 11-24,System R overview,sysr,,,,
+#fdf3fd,Thu 11-05,Datalog and Recursion,datalog,,,,
+white,Tue 11-10,Lineage,lineage,,,,
+white,Thu 11-12,tba,,,,,
+#fdf3fd,Tue 11-17,tba,,,,,
+#fdf3fd,Thu 11-19,tba,,,,,
+white,Tue 11-24,tba,,,,,
 white,Thu 11-26,-,,,,,
-#fdf3fd,Tue 12-01,Ingres/Postgres,postgres,,,,
-#fdf3fd,Thu 12-03,Datacubes,datacubes,,,,
+#fdf3fd,Tue 12-01,System R overview,sysr,,,,
+#fdf3fd,Thu 12-03,Ingres/Postgres,postgres,,,,
 white,Tue 12-08,Physical Database Design,pvd,,,,
 white,Thu 12-10,Presentations (10 min/group),,,,,Presentations (10 min/group
 #fdf3fd,Tue 12-14,-,,,,,Project Report

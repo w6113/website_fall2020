@@ -25,7 +25,7 @@
   * Paper <small>40%</small>
 * [Participation](./syllabus#participation)  <small>20%</small>    
   Inc. [paper reviews](./syllabus#reading)
-* [Assignments](https://github.com/w6113/databass-public) <small>10%</small>
+* [Assignments](./assignments) <small>10%</small>
 
 
 

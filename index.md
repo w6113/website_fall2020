@@ -54,6 +54,10 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
         <br/>
         <span class='presenter'>Presenter: {{r.presenter}}</span>
       {% endif %}
+      {% if r.notes %}
+        <br/>
+        <span class='notes'>{{r.notes | safe}}</span>
+      {% endif %}
       </td>
     <td class="notes">
     </td>

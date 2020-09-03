@@ -54,8 +54,6 @@ Overview
   * Read the instructions at the top
   * Add your reviews
 
-<!--The first reviews ([System R](#lec2), [Postgres](#lec3)) are special, so look at the paper description for submission details.  -->
-
 ### Reading Tips
 
 Ask the following questions while readings
@@ -74,49 +72,11 @@ Ask the following questions while readings
 
 # The Papers
 
+<a name='review1' />
+### Review
 
-<a name="sysr"/>
-### System R Overview 
-
-Readings 
-
-* Required: <a href="./files/papers/systemr-retrospective.pdf">System R Retrospective</a>
-* Optional: <a href="./files/papers/ingres-retrospective.pdf">Ingres Design</a>
-
-
-Paper Review 
-
-* System R was an impressive research and engineering effort, and the reading is a retrospective of the 6 year project.  
-* The paper discusses "the Convoy Problem".  Discuss the problem:  What is it?  Why does it exist?
-* The paper discusses many many topics.  Identify and pick one aspect (different than the convoy problem) that you are particularly impressed with.  Discuss what and why.
-* Note: The format of this review will be different than future reviews because this is a warmup paper
-
-Submission
-
-* [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
-
-
-<a name='postgres' />
-### INGRES/POSTGRES    
-
-Readings
-
-* Required: [Design of Postgres (Initial design)](./files/papers/postgres-retrospective.pdf)
-* Optional: [The Postgres Next-Generation DBMS (Midterm design)](./files/papers/postgres-nextgen-cacm.pdf)
-* Optional: [Design of INGRES](./files/papers/ingres-retrospective.pdf)
-  * Worth skimming: QUEL, leveraging UNIX, concurrency control arguments
-* Optional: [The Landsharks are on the Squawk Box - Stonebraker Turing Award Lecture](https://cacm.acm.org/magazines/2016/2/197423-the-land-sharks-are-on-the-squawk-box/fulltext)
-
-
-Paper Review 
-
-* What were the main goals for the Postgres system and why do you think they chose those goals?  Do they make sense?
-* Pick one of the (many) ideas in the paper that most interests you.  Why is it interesting?   Does the proposed design hold water?  Feel free to read related work.
-* Note: The format of this review will be different than future reviews because this is a warmup paper
-
-Submission
-
-* [SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/tv0wcPqzvs3hcyNG3)
+* Required: [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
+* Optional: [What goes around comes around](./files/papers/whatgoesaround-stonebraker.pdf)
 
 
 <a name='indexes' />
@@ -135,6 +95,50 @@ Some things to think about:
 * These papers extend indexes to consider multi-dimensional datasets.  Do they address the needs for modern data types (e.g., videos, images, books) and all the things we want to use this data for??  
 
 
+<a name='join' />
+### Joins   
+
+Readings
+
+* Required: [Shapiro: Join Processing in Database Systems with Large Main Memories](./files/papers/gracejoin-shapiro.pdf)
+* Optional: [Ripple Joins for Online Aggregation](http://www.cs.cmu.edu/~natassa/courses/15-823/F02/papers/decision-ripple-sigmod99.pdf)
+
+
+
+<a name='distjoin' />
+### Distributed Joins    
+
+Readings
+
+* Required: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
+* Optional: [TrackJoin](./files/papers/trackjoin-sigmod14.pdf)
+* Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt)
+* Optional: [Pushing Data-Induced Predicates Through Joins in Big-Data Clusters](http://www.vldb.org/pvldb/vol13/p252-orr.pdf)
+
+
+<a name='exchange' />
+### Exchange Operator    
+
+Readings
+
+* Required: [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
+* Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
+
+<a name='eddies' />
+### Eddies  
+
+Readings
+
+* Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
+* Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
+* Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
+
+Address the following in your review's details:
+
+* This question asks you to separate the ideas in eddies from its implementation.  Imagine eddies became the canonical engine design, and its _core ideas_ continued to be improved.
+  * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
+  * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
+
 
 <a name='colstore' />
 ### Column Stores    
@@ -148,6 +152,16 @@ Readings
 * Optional: [Column-Stores vs. Row-Stores: How Different Are They Really?](http://www.cs.umd.edu/~abadi/papers/abadi-sigmod08.pdf)
 * Optional: [Survey: The Design and Implementation of Modern Column-Oriented Database Systems](https://stratos.seas.harvard.edu/files/stratos/files/columnstoresfntdbs.pdf)
 * Optional: [Blog Post: 40x faster hash joiner with vectorized execution](https://www.cockroachlabs.com/blog/vectorized-hash-joiner/)
+
+
+<a name="clouddb" />
+### Cloud-scale Analytics
+
+* Required: [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
+* Optional: [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
+* Optional: [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
+* Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
+
 
 
 
@@ -179,50 +193,6 @@ Some things to think about when reading
 
 
 
-
-<a name='join' />
-### Joins   
-
-Readings
-
-* Required: [Shapiro: Join Processing in Database Systems with Large Main Memories](./files/papers/gracejoin-shapiro.pdf)
-* Optional: [Ripple Joins for Online Aggregation](http://www.cs.cmu.edu/~natassa/courses/15-823/F02/papers/decision-ripple-sigmod99.pdf)
-
-
-
-<a name='distjoin' />
-### Distributed Joins    
-
-Readings
-
-* Required: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
-* Optional: [TrackJoin](./files/papers/trackjoin-sigmod14.pdf)
-* Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt)
-
-
-<a name='exchange' />
-### Exchange Operator    
-
-Readings
-
-* Required: [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
-* Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
-
-<a name='eddies' />
-### Eddies  
-
-Readings
-
-* Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
-* Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
-* Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
-
-Address the following in your review's details:
-
-* This question asks you to separate the ideas in eddies from its implementation.  Imagine eddies became the canonical engine design, and its _core ideas_ continued to be improved.
-  * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
-  * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
-
 <a name='udfs' />
 ### Hybrid Caching/UDFs    
 
@@ -232,7 +202,10 @@ Readings
 * Optional: [Exploiting Correlations for Expensive Predicate Evaluation](https://arxiv.org/pdf/1411.3374.pdf)
 * Optional: [Optimization of Queries with User-defined Predicates](http://www.vldb.org/conf/1996/P087.PDF)
 * Optional: [Probabilistic Predicates](https://www.microsoft.com/en-us/research/publication/accelerating-machine-learning-queries-with-probabilistic-predicates/)
-
+* Optional: [Froid: Optimizing Imperative Programs in RDBMSes](./files/papers/froid.pdf)
+  * [Research Talk](https://www.youtube.com/watch?v=Xyvpcf2RtO4)
+* Optional: [Compiling PL/SQL Away](https://arxiv.org/pdf/1909.03291.pdf)
+* Optional: [Flare: Optimizing Apache Spark with Native Compilation](https://www.usenix.org/system/files/osdi18-essertel.pdf)
 
 
 
@@ -242,6 +215,7 @@ Readings
 Readings
 
 * Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
+* Optional: [Orca: A Modular Query Optimizer Architecture for Big Data](./files/papers/orca.pdf)
 * Optional: [Cascades](./files/papers/cascades-graefe.pdf)
 * Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
 * Optional: [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
@@ -259,12 +233,6 @@ Readings
 * Optional: [Spark (mainly examples)](http://static.usenix.org/events/hotcloud10/tech/full_papers/Zaharia.pdf)
 * Optional: [State of the Art in Large scale Data Flow](./files/papers/kossmann-sotadistdbs.pdf)
 
-
-<!--
-* Required: [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
-* Optional: [SkinnerDB: Regret-Bounded Query Evaluation via Reinforcement Learning](https://arxiv.org/pdf/1901.05152.pdf)
-* Optional: [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
--->
 
 
 <a name='dataflow2' />
@@ -296,6 +264,15 @@ Some notes to guide your reading and thinking.
 * What makes this paper easy or hard to read?  Note those, and other questions you have, in the comments, and we can discuss in class
 * We will go over some of the technical details of how execution operates
 
+<a name='matviews' />
+### Materialized Views    
+
+* Required: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
+* Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
+* Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
+
+
+
 
 <a name='datalog' />
 ### Datalog and Recursion   
@@ -324,47 +301,91 @@ Question to comment on:
 
 * Provenance goes beyond what they mention in the paper and is _everywhere_.  Point out a concept/functionality in the real (or digital) world that can be recast as provenance and provenance queries.  Describe it.
 
+<a name='lineage2' />
+### Lineage Systems
 
+Read one of the two required papers:
+
+* Required: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
+* Required: [Perm: Processing provenance and data on the same data model through query rewriting](https://www.zora.uzh.ch/id/eprint/24446/2/main.pdf)
+* Optional: [GPROM: Middleware implementation for PERM](https://par.nsf.gov/servlets/purl/10082097)
+* Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
+* Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
+
+
+
+<!--
 <a name='mockpc' />
 ### MockPC  
 
 Readings:
 
 * Your assigned papers
-
-
-<a name='matviews' />
-### Materialized Views    
-
-* Required: [Survey: Materialized Views](./files/papers/matview-survey.pdf) Ch 1,2,4
-* Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
+-->
 
 
 
-<a name='datacubes' />
-### Data Cubes    
+<a name="sysr"/>
+### System R Overview 
 
-* Required: [Data Cube](./files/papers/datacube-jimgray.pdf)
-* Optional: [Implementing Data Cubes Efficiently](http://ilpubs.stanford.edu:8090/102/1/1995-34.pdf)
-* Optional: [Explaining differences in multidimensional aggregates](./files/papers/olapdiff-sunita.pdf)
-* Optional: [Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets](https://cscheid.net/static/papers/infovis_gaussian_cubes_2016.pdf)
+Readings 
+
+* Required: <a href="./files/papers/systemr-retrospective.pdf">System R Retrospective</a>
+* Optional: <a href="./files/papers/ingres-retrospective.pdf">Ingres Design</a>
 
 
+Paper Review 
 
-<a name="pvd"/>
-### Physical Database Design
+* System R was an impressive research and engineering effort, and the reading is a retrospective of the 6 year project.  
+* The paper discusses "the Convoy Problem".  Discuss the problem:  What is it?  Why does it exist?
+* The paper discusses many many topics.  Identify and pick one aspect (different than the convoy problem) that you are particularly impressed with.  Discuss what and why.
 
-* TBA
+
+<a name='postgres' />
+### INGRES/POSTGRES    
+
+Readings
+
+* Required: [Design of Postgres (Initial design)](./files/papers/postgres-retrospective.pdf)
+* Optional: [The Postgres Next-Generation DBMS (Midterm design)](./files/papers/postgres-nextgen-cacm.pdf)
+* Optional: [Design of INGRES](./files/papers/ingres-retrospective.pdf)
+  * Worth skimming: QUEL, leveraging UNIX, concurrency control arguments
+* Optional: [The Landsharks are on the Squawk Box - Stonebraker Turing Award Lecture](https://cacm.acm.org/magazines/2016/2/197423-the-land-sharks-are-on-the-squawk-box/fulltext)
+
+
+Paper Review 
+
+* What were the main goals for the Postgres system and why do you think they chose those goals?  Do they make sense?
+* Pick one of the (many) ideas in the paper that most interests you.  Why is it interesting?   Does the proposed design hold water?  Feel free to read related work.
+
 
 <a name="optional" />
-## Optional Topics (not on schedule)
+## Unscheduled Topics
 
 
+<!--
 <a name='sampling' /> 
 ### Visualization/Sampling
 
 * Required: [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
 * Optional: [Dynamic Sample Selection for Approximate Query Processing](http://www-cs-students.stanford.edu/~babcock/papers/sampling.pdf)
+-->
+
+<a name="serverless"/>
+### Serverless Querying
+
+* Required: [Cloudburst: Stateful Functions-as-a-Service](https://arxiv.org/abs/2001.04592)
+* Optional: [Autoscaling Tiered Cloud Storage in Anna](https://dsf.berkeley.edu/jmh/papers/anna_vldb_19.pdf)
+* Optional: [Starling: A Scalable Query Engine on Cloud Function Services](https://arxiv.org/pdf/1911.11727.pdf)
+
+
+<a name="mlindb" />
+### ML in DB
+
+* Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
+* Required: [Dan Olteanu's VLDB 2020 Keynote](https://www.youtube.com/watch?v=0ic0jMjOpM0) and skim [the paper](http://www.vldb.org/pvldb/vol13/p3502-olteanu.pdf)
+* Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
+* Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
 
 
 
@@ -376,31 +397,47 @@ Readings:
 * Optional: [Query-based Workload Forecasting for Self-Driving Database Management Systems](https://www.cs.cmu.edu/~dvanaken/papers/forecasting-sigmod18.pdf)
 * Optional: [Database Cracking](https://stratos.seas.harvard.edu/files/IKM_CIDR07.pdf)
 
+<a name="learned" />
+### Learned and Adaptive Indexes
+
+* [From Auto-tuning One Size Fits All to Self-designed and Learned Data-intensive Systems](https://stratos.seas.harvard.edu/files/stratos/files/selfdesignedandlearnedsystems.pdf)
+
+
+<a name='joinopt' />
+### Join Optimization
+
+* Required: [Dynamic programming strikes back](https://dl.acm.org/doi/pdf/10.1145/1376616.1376672)
+* Required: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
+* Optional: [Learning to Optimize Join Queries With Deep Reinforcement Learning](https://arxiv.org/pdf/1808.03196.pdf)
+* Optional: [SkinnerDB: Regret-Bounded Query Evaluation via Reinforcement Learning](https://arxiv.org/pdf/1901.05152.pdf)
+* Optional: [Selectivity Estimation using Probabilistic Models](https://ai.stanford.edu/~koller/Papers/Getoor+al:SIGMOD01.pdf)
 
 
 <a name='aqp' />
 ### Approximate Query Processing
 
-
 * Required: [BlinkDB](https://sameeragarwal.github.io/blinkdb_eurosys13.pdf)
 * Optional: [Pfunk-H](https://columbiaviz.github.io/files/papers/pfunk.pdf)
 * Optional: [Sample+Seek](https://columbiaviz.github.io/files/papers/sigmod16sampleseek.pdf)
 * Optional: [WanderJoin](https://columbiaviz.github.io/files/papers/wanderjoin.pdf)
+* Optional: [Rapid Approximate Aggregation with Distribution-Sensitive Interval Guarantees](https://arxiv.org/pdf/2008.03891.pdf)
+
+<a name='stream' />
+### Windows and Streaming
+
+* Required: [The Dataflow Model](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
+* Optional: [Continuous Query Language](http://ilpubs.stanford.edu:8090/758/1/2003-67.pdf) 
 
 
-<a name="mlindb" />
-### ML in DB
+<a name="replication" />
+### Distributed Consistency under Replication
 
-* Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
-* Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
-* Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
-
-<a name='lineage2' />
-### Fast Lineage Systems
-
-* Required: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
-* Optional: [Provenance for Interacive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
-* Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
+* [The original Raft paper](https://raft.github.io/raft.pdf)
+* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
+* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
+* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
+* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
+* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
 
 
 <a name='scans' />
@@ -411,12 +448,27 @@ Readings:
 * Optional: [Vectorizing Database Column Scans with Complex Predicates](http://www.adms-conf.org/2013/muller_adms13.pdf)
 
 
-
-
 <a name='lineage3' />
 ### Using Lineage
 
-* Required: [Querying and Creating Visualizations by Analogy](http://www.cs.utah.edu/~juliana/pub/tvcg-analogy2007.pdf)
+* Optional: [Querying and Creating Visualizations by Analogy](http://www.cs.utah.edu/~juliana/pub/tvcg-analogy2007.pdf)
 * Optional: [VisTrails: Enabling Interactive Multiple-View Visualizations](https://vgc.poly.edu/~juliana/pub/vistrails-vis2005.pdf)
 
+<a name='datacubes' />
+### Data Cubes    
 
+* Required: [Data Cube](./files/papers/datacube-jimgray.pdf)
+* Optional: [Implementing Data Cubes Efficiently](http://ilpubs.stanford.edu:8090/102/1/1995-34.pdf)
+* Optional: [Explaining differences in multidimensional aggregates](./files/papers/olapdiff-sunita.pdf)
+* Optional: [Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets](https://cscheid.net/static/papers/infovis_gaussian_cubes_2016.pdf)
+
+<a name="obliv"/>
+### Oblivious Databases
+
+* Required: [ObliDB](http://www.vldb.org/pvldb/vol13/p169-eskandarian.pdf)
+* Optional: [Efficient Oblivious Database Joins](http://www.vldb.org/pvldb/vol13/p2132-krastnikov.pdf)
+
+<a name="pvd"/>
+### Physical Database Design
+
+* TBA

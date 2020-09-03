@@ -205,4 +205,15 @@ Potential ideas
 * Some RL + data structure business
 
 
+* Visualizations and clients currently need to poll from materialized
+  * the system supports creating streaming sinks
+  * extend vega lite to rewrite subsets of the spec into
+    materialized views that can stream changes directly to the client.
+
+use lineage in interesting ways
+
+* not "show inputs", not "whynot"
+* actually use it -- implement smoke hilda
+
+
 -->
