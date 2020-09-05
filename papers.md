@@ -271,7 +271,13 @@ Some notes to guide your reading and thinking.
 * Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
 * Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
 
+<a name="incmatviews" />
+### Incrementally Maintaining Materialized Views
 
+* Required: [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf)
+  * Optional: [DBToaster talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf)
+  * Optional: [The theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf)
+* Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
 
 
 <a name='datalog' />
@@ -311,6 +317,18 @@ Read one of the two required papers:
 * Optional: [GPROM: Middleware implementation for PERM](https://par.nsf.gov/servlets/purl/10082097)
 * Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
+
+
+<a name="replication" />
+### Distributed Consistency under Replication
+
+* [The original Raft paper](https://raft.github.io/raft.pdf)
+* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
+* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
+* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
+* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
+* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
+
 
 
 
@@ -427,17 +445,6 @@ Paper Review
 
 * Required: [The Dataflow Model](http://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf)
 * Optional: [Continuous Query Language](http://ilpubs.stanford.edu:8090/758/1/2003-67.pdf) 
-
-
-<a name="replication" />
-### Distributed Consistency under Replication
-
-* [The original Raft paper](https://raft.github.io/raft.pdf)
-* (Optional) [Viewstamped Replication Revisited](http://pmg.csail.mit.edu/papers/vr-revisited.pdf)
-* (Optional) [Living Without Atomic Clocks blog post](https://www.cockroachlabs.com/blog/living-without-atomic-clocks/)
-* (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
-* (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
-* (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
 
 
 <a name='scans' />
