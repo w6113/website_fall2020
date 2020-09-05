@@ -124,21 +124,6 @@ Readings
 * Required: [Encapsulation of parallelism in the volcano query processing system](./files/papers/volcanoparallelism-89.pdf)
 * Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
 
-<a name='eddies' />
-### Eddies  
-
-Readings
-
-* Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
-* Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
-* Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
-
-Address the following in your review's details:
-
-* This question asks you to separate the ideas in eddies from its implementation.  Imagine eddies became the canonical engine design, and its _core ideas_ continued to be improved.
-  * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
-  * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
-
 
 <a name='colstore' />
 ### Column Stores    
@@ -474,6 +459,23 @@ Paper Review
 
 * Required: [ObliDB](http://www.vldb.org/pvldb/vol13/p169-eskandarian.pdf)
 * Optional: [Efficient Oblivious Database Joins](http://www.vldb.org/pvldb/vol13/p2132-krastnikov.pdf)
+
+<a name='eddies' />
+### Eddies  
+
+Readings
+
+* Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
+* Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
+* Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
+
+Address the following in your review's details:
+
+* This question asks you to separate the ideas in eddies from its implementation.  Imagine eddies became the canonical engine design, and its _core ideas_ continued to be improved.
+  * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
+  * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
+
+
 
 <a name="pvd"/>
 ### Physical Database Design
