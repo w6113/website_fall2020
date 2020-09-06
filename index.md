@@ -19,6 +19,8 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 
 #### Recent Announcements
 
+* [Assignment 0](./assignments) released.
+
 #### Tentative Schedule
 
 
