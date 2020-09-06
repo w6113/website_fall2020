@@ -195,6 +195,58 @@ The following are examples of possible projects -- they are by no means a comple
 5. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 
 
+
+khameleon
+
+* serverless/lmfao --> scalable backend
+* progressively encoded and computed data cubes
+
+databass/pysmoke
+
+* apps of lineage
+  * visualize lineage by leveraging the charts and queries 
+    used to generate the lineage
+  * smoke hilda
+* add WCO joins and explore vicktor's paper
+* databass --> rust / js
+* columnar
+* incorporate something interesting fro the readings
+  * why not summarization
+* use databass to do incremental computation in an incremental fashion (dbtoaster)
+  * bonus: incremntally maintain lineage indexes
+* benchmark vega and diff dataflow, find benchmarks
+* add an IR, define the IR
+* adding different access methods and extend optimizer to recognize
+
+evaluate ml in databases
+
+smoke for pandas?
+
+* hand instrument c code for some operators to show feasibility
+
+* expand on diffparsing with query language, apply to non-sql programs
+
+cross layer signals for ML in systems
+
+* informative features come from
+  * interface feoatures from a viz that generate queries that run on the index
+  * ast/query plan features that are known before the query is executed
+  * batches of data that are inserted into the index
+* find a learned index, show that adding occassional informative features 
+  improves the model accuracy
+* show that adding a mixture of informative and uninformative features 
+* show that it improves the actual index performance on serial workloads
+* what happens on a mixture of concurrent workloads
+* connect to logging infrastructure
+
+combining a streaming system with realitysketch ideas
+
+rain
+
+IFC for concurrency control
+
+
+
 <!--
 
 Potential ideas

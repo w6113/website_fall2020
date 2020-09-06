@@ -76,9 +76,17 @@ WHERE c.c_custkey = o.o_custkey AND
 GROUP BY l.l_orderkey, o.o_orderdate, o.o_shippriority
 ``` 
 
-### Step 2: Py-Smoke
+### Step 2: Databass-Smoke
 
-It turns out Databass also supports lineage capture, as described [in the Smoke paper](./files/papers/smoke-vldb18.pdf).  Of course, it is not nearly as performant, since Databass generates Python code instead of C++.  Regardless, in this step, you will implement lineage capture for the XYZ operator, and then generate some lineage.
+It turns out Databass also supports lineage capture, as described [in the Smoke paper](./files/papers/smoke-vldb18.pdf).  Of course, it is not nearly as performant, since Databass generates Python code instead of C++.  Regardless, in this step, you will implement lineage capture for the root operators (Yield, Collect), and then generate some lineage.
+
+To do so, edit the file under `databass/compile/py/root.py` and follow the instructions in the comments.
+
+Evaluate your code using the following unit tests.  We recommend you craft your own queries and ground truth to verify that your code is correct.
+
+``` 
+pytest test/a5.py -x
+``` 
 
 
 ### Step 3: Benchmarking
