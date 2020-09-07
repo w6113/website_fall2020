@@ -74,6 +74,7 @@ Ask the following questions while readings
 Papers on how to read papers
 
 * [How to Read a Paper - S. Keshav](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458)
+* [How to Read a Research Compendium - Nüst et al.](https://arxiv.org/pdf/1806.09525.pdf)
 
 Some papers on reviewing papers
 
