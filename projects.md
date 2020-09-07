@@ -31,11 +31,14 @@ Teams should consist of 1-3 people. In addition, if you have a project in mind, 
 
 Good class projects can vary dramatically in complexity, scope, and topic. The only requirement is that they be related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
 
+Choosing a research problem is very difficult, especially if you have not done so before.  You may end up thinking of, and discarding many possibilities before finding the project you ultimately work on.  Have a fuzzy idea?  Want some feedback or help brainstorming a project?  **Come to office hours and/or recitation.  The staff are all here to help!**
+
 
 <a name="proposal" />
 ### Proposal
 
 Your research proposal will contain an overview of the research problem, _your hypothesis_, first pass at related work, a description of how you plan to complete the project, and metrics to decide _if it worked_.   
+
 
 We have setup a template for your proposal on overleaf.  Clone it into your team's account to edit it.  Make sure to change the title and author names, and include your team members' UNIs.
 
@@ -56,6 +59,11 @@ You will submit a draft of your paper that should be between 4 -- 6 pages. Pleas
 For the draft, you should have a fleshed out introduction, related work, and technical overview.  You should have a clearer idea of the technical details than from the proposal, but need not have implemented it yet.  You do not need to have run experiments yet, but should sketch out the hypotheses and the potential experiment setup (which may change). If you have preliminary findings, that's great!  Please include those.
 
 In short, I expect that you have a much clearer idea about the problem _and_ how it can be solved.  Most of the technical details and relevant work should be clear, but you may not have implemented it yet.
+
+
+Tips:
+
+* [Tips for Writing Technical Papers - Jennifer Widom, Dean of Stanford Engineer](https://cs.stanford.edu/people/widom/paper-writing.html)
 
 **Submission**
 
