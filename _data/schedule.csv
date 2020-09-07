@@ -9,7 +9,7 @@ white,Tue 09-29,Volcano/Cascades Optimizer,cascades,,,,
 white,Thu 10-01,Column Stores,colstore,,,A3,"A2 (10/4 11:59pm)<br/><a href=""./projects#prospectus"">Prospectus</a>"
 #fdf3fd,Tue 10-06,Cloud Analytics,cloudanalytics,,,,
 #fdf3fd,Thu 10-08,Query Compilation,compilation,,,,
-white,Tue 10-13,Hybrid Caching/UDFs,udfs,"Bonus: DB seminar talk by <a href=""https://gatterbauer.name"">Wolfgang Gatterbauer</a> on <a href=""https://queryvis.com/"">QueryViz</a>",,A4 (optional),A3  (10/14 11:59pm)
+white,Tue 10-13,Hybrid Caching/UDFs,udfs,"Bonus: DB seminar talk by <a href=""https://gatterbauer.name"">Wolfgang Gatterbauer</a> on <a href=""https://queryvis.com/"">QueryViz</a>",,A4,A3  (10/14 11:59pm)
 white,Thu 10-15,Large-scale Dataflow 1,dataflow1,,,,
 #fdf3fd,Tue 10-20,Large-scale Dataflow 2,dataflow2,,,,
 #fdf3fd,Thu 10-22,Materialized Views,matviews,,,,"<a href=""./midpoint"">Paper Draft Due</a>"

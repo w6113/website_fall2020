@@ -6,12 +6,13 @@ layout: page
 
 The assignments are mainly to give you exposure to different concepts and try  systems out.  The assignments will require some elbow grease.
 
-## A0-3: Databass
+## A0-5: Databass
 
 Follow the directions in [the databass repository](https://github.com/w6113/databass-public/tree/master/docs)
 
-<!--
-## (Optional) A4: Try Differential Dataflow
+
+
+## (Optional) Differential Dataflow
 
 Teams of 2
 
@@ -19,9 +20,8 @@ Teams of 2
 * Go through the [getting started documentation](https://materialize.io/docs/get-started/)
   * [You can also try it out in the browser](https://materialize.io/docs/katacoda/?intro-wikipedia)
 
--->
 
-## (Optional) A4: Try Datalog
+## (Optional) Datalog
 
 Teams of 2
 
@@ -45,60 +45,4 @@ Write the `.dl` programs to answer at least 2 of the following questions
 1. Write a datalog program in `q3.dl` that returns the query ids of all optimized plans that contain one or more hash paths.  A hash path (a made up term) is a path from the root to a leaf operator that contains exactly one HashJoin operator.
 
 
-### Submission
 
-TBA
-
-
-## A5: Try Lineage Systems
-
-The goal of this assignment is to play with two lineage-capture systems, and go through the process of performance evaluation.
-Your task will be to benchmark the two systems and analyze the findings.
-
-
-### Step 1: GPROM
-
-Setup
-
-* Follow the instructions to install [GPROM + SQLite](https://github.com/IITDBGroup/gprom)
-* Download the small [TPC-h](./files/TPC-H-small.db ) SQLite database (thanks to [lovasoa/TPCH-sqlite](https://github.com/lovasoa/TPCH-sqlite))
-
-```
-SELECT l.l_orderkey, 
-       sum(l.l_extendedprice * (1-l.l_discount)) as revenue, 
-       o.o_orderdate, 
-       o.o_shippriority 
-FROM (select * from customer limit 200) as c, 
-     (select * from orders limit 200) as o, 
-     (select * from lineitem limit 200) as l 
-WHERE c.c_custkey = o.o_custkey AND 
-      l.l_orderkey = o.o_orderkey 
-GROUP BY l.l_orderkey, o.o_orderdate, o.o_shippriority
-``` 
-
-### Step 2: Databass-Smoke
-
-It turns out Databass also supports lineage capture, as described [in the Smoke paper](./files/papers/smoke-vldb18.pdf).  Of course, it is not nearly as performant, since Databass generates Python code instead of C++.  Regardless, in this step, you will implement lineage capture for the root operators (Yield, Collect), and then generate some lineage.
-
-To do so, edit the file under `databass/compile/py/root.py` and follow the instructions in the comments.
-
-Evaluate your code using the following unit tests.  We recommend you craft your own queries and ground truth to verify that your code is correct.
-
-``` 
-pytest test/a5.py -x
-``` 
-
-
-### Step 3: Benchmarking
-
-
-
-
-Resources
-
-* [Tips on organizing, running, and plotting experiments](https://github.com/researchsetup/researchsetup.github.io/wiki/code#running-experiments) 
-
-
-### Submission
-
-TBA
