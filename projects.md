@@ -39,12 +39,11 @@ Your research proposal will contain an overview of the research problem, _your h
 
 We have setup a template for your proposal on overleaf.  Clone it into your team's account to edit it.  Make sure to change the title and author names, and include your team members' UNIs.
 
-* [Proposal Template](https://www.overleaf.com/read/xhpgqyqbghry)
 
 **Submission**
 
-1. Rename the filename of your proposal to the following format, last names should be in **alphabetical order**. `proposal_<UNI>_.._<UNIn>.pdf`
-2. [**Click here to upload the file**](#)
+1. [Proposal Template on Overleaf](https://www.overleaf.com/read/xhpgqyqbghry)
+1. [Click here to submit](#)
 
 
 
@@ -54,13 +53,15 @@ We have setup a template for your proposal on overleaf.  Clone it into your team
 
 You will submit a draft of your paper that should be between 4 -- 6 pages. Please use the [overleaf report template](https://www.overleaf.com/read/phmrptrtjrhz) to get started.  It already contains a scaffold of sections, and suggestions of what to include in each section.  Your report is not beholden to these sections, so take the template as a starting point.  
 
+
 For the draft, you should have a fleshed out introduction, related work, and technical overview.  You should have a clearer idea of the technical details than from the proposal, but need not have implemented it yet.  You do not need to have run experiments yet, but should sketch out the hypotheses and the potential experiment setup (which may change). If you have preliminary findings, that's great!  Please include those.
 
 In short, I expect that you have a much clearer idea about the problem _and_ how it can be solved.  Most of the technical details and relevant work should be clear, but you may not have implemented it yet.
 
 **Submission**
 
-* [Paper submission website](#).  MAKE SURE YOU USE THE CORRECT TEMPLATE.
+1. Use the [report template on Overleaf](https://www.overleaf.com/read/phmrptrtjrhz)
+1. [Click here to submit](#)
 
 
 
