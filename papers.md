@@ -70,6 +70,20 @@ Ask the following questions while readings
   * Do you believe their results?
   * Are the results presented well?
 
+
+Papers on how to read papers
+
+* [How to Read a Paper - S. Keshav](https://dl.acm.org/doi/pdf/10.1145/1273445.1273458)
+
+Some papers on reviewing papers
+
+* [Review AntiPatterns (written for FSE 14 PC)](https://homes.cs.washington.edu/~mernst/advice/review-antipatterns-devanbu.txt)
+* [Ethics of Peer Review](https://ori.hhs.gov/sites/default/files/prethics.pdf)
+* [How NOT to review a paper](https://sigmodrecord.org/publications/sigmodRecord/0812/p100.open.cormode.pdf)
+* [Conference Reviewing Considered Harmful](https://homes.cs.washington.edu/~tom/support/confreview.pdf): A view on how reviewing works in practice.
+
+
+
 # The Papers
 
 <a name='review1' />
