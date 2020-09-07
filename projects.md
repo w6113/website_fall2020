@@ -15,9 +15,8 @@ title: W6113 Research Project
 
 Percentages are of your total class grade.
 
-* Prospectus    10-01   (10%)
+* Proposal    10-01   (10%)
 * Paper Draft   10-29  (5%)
-* Mock PC       11-10 to 11-12    (5%)
 * Presentation  12-10  (10%)
 * Report        12-14   (40%)
 
@@ -33,41 +32,29 @@ Teams should consist of 1-3 people. In addition, if you have a project in mind, 
 Good class projects can vary dramatically in complexity, scope, and topic. The only requirement is that they be related to something we have studied in this class and that they contain some element of research -- e.g., that you do more than simply engineer a piece of software that someone else has described or architected. To help you determine if your idea is of reasonable scope, we will arrange to meet with each group several times throughout the semester.
 
 
-<a name="prospectus" />
-### Prospectus
+<a name="proposal" />
+### Proposal
 
-Your research prospectus will contain an overview of the research problem, _your hypothesis_, first pass at related work, a description of how you plan to complete the project, and metrics to decide _if it worked_.   
+Your research proposal will contain an overview of the research problem, _your hypothesis_, first pass at related work, a description of how you plan to complete the project, and metrics to decide _if it worked_.   
 
-Your prospectus should follow the example:
+We have setup a template for your proposal on overleaf.  Clone it into your team's account to edit it.  Make sure to change the title and author names, and include your team members' UNIs.
 
-* [Click here for an example prospectus](./files/prospectus/prospectus.pdf)
-* [Click here for the tex files](https://github.com/w6113/w6113.github.io/tree/master/files/prospectus)
+* [Proposal Template](https://www.overleaf.com/read/xhpgqyqbghry)
 
 **Submission**
 
-1. Rename the filename of your prospectus to the following format, last names should be in **alphabetical order**. `prospectus_<UNI>_.._<UNIn>.pdf`
+1. Rename the filename of your proposal to the following format, last names should be in **alphabetical order**. `proposal_<UNI>_.._<UNIn>.pdf`
 2. [**Click here to upload the file**](#)
 
 
-<a name="midpoint"></a>
-### Mock PC Meeting and Paper Draft
 
-We will spend two class sessions running a mock program committee (PC) meeting.  The timeline for this will be as follows:
 
-* **TBA  11:59PM EST** Submit a draft of your paper to CMT **[using the ACM proceedings LaTeX template](https://www.acm.org/publications/proceedings-template)**.   The draft should be a fleshed out version of your prospectus, with substantially more technical details and a sketch of your experiments.
-* **TBA** You will be assigned 3-4 papers to review, and serve as the "lead" for one.  The review format will be the same as the reviews throughout the semester.
-* **TBA 11:59PM EST** You will submit your reviews to CMT.   Read the other reviews for your assigned papers over the weekend.  
-* **TBA** We will discuss each paper based on the reviews (authors will step out of the room).  Each reviewer will argue their view on the paper, and try to reach a consensus.  The lead is responsible for running the discussion.   The lead will also summarize the discussion/outcome into a meta review.  
+<a name="draft" />
+### Paper Draft
 
-#### The Paper Draft
+You will submit a draft of your paper that should be between 4 -- 6 pages. Please use the [overleaf report template](https://www.overleaf.com/read/phmrptrtjrhz) to get started.  It already contains a scaffold of sections, and suggestions of what to include in each section.  Your report is not beholden to these sections, so take the template as a starting point.  
 
-Your paper should be no more than 10 pages, and include at least the following sections:
-
-1. Introduction: motivate the problem, summarize related work, and declare your crisp hypothesis (or hypotheses).  This should be fully present.
-2. Related Work: describe the state of the art in the most relevant research areas to your project.  This should be fully present.
-3. Technical Overview: outline the technical approach you are taking so that the reader has an intuition about the solution.  This should be fully present.
-4. Technical Details: considerably more technical details of your project, and details on what has been implemented.  The details should be mostly complete, but may not be implemented yet.
-5. Experiments: describe the experimental setup as we have gone over in class.  You may not have run experiments yet.  If you have, feel free to include them.
+For the draft, you should have a fleshed out introduction, related work, and technical overview.  You should have a clearer idea of the technical details than from the proposal, but need not have implemented it yet.  You do not need to have run experiments yet, but should sketch out the hypotheses and the potential experiment setup (which may change). If you have preliminary findings, that's great!  Please include those.
 
 In short, I expect that you have a much clearer idea about the problem _and_ how it can be solved.  Most of the technical details and relevant work should be clear, but you may not have implemented it yet.
 
@@ -75,6 +62,18 @@ In short, I expect that you have a much clearer idea about the problem _and_ how
 
 * [Paper submission website](#).  MAKE SURE YOU USE THE CORRECT TEMPLATE.
 
+
+
+<!--
+<a name="midpoint"></a>
+### Mock PC Meeting and Paper Draft
+
+We will spend two class sessions running a mock program committee (PC) meeting.  The timeline for this will be as follows:
+
+* **TBA  11:59PM EST** Submit a draft of your paper to CMT **[using the ACM proceedings LaTeX template](https://www.acm.org/publications/proceedings-template)**.   The draft should be a fleshed out version of your proposal, with substantially more technical details and a sketch of your experiments.
+* **TBA** You will be assigned 3-4 papers to review, and serve as the "lead" for one.  The review format will be the same as the reviews throughout the semester.
+* **TBA 11:59PM EST** You will submit your reviews to CMT.   Read the other reviews for your assigned papers over the weekend.  
+* **TBA** We will discuss each paper based on the reviews (authors will step out of the room).  Each reviewer will argue their view on the paper, and try to reach a consensus.  The lead is responsible for running the discussion.   The lead will also summarize the discussion/outcome into a meta review.  
 
 #### Paper Reviews
 
@@ -150,37 +149,50 @@ Submit a reflection of your project
 * How can you improve the writing and argumentation (if applicable)?
 * How useful were the reviews?
 
+-->
 
 
+## <a name="showcase"/>Project Showcase 
 
+Your team will prepare and present a project poster at the end-of-course showcase session.   This gives you an opportunity to present a short presentation demo of your work and show what you have accomplished in the class!  
 
+Your presentation should be polished.  Since there is still time until the final report, you are encouraged to also discuss ideas or challenges you are still considering.  
 
-<!--
-#### Poster Session (TBA)
+**Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  In addition to _what_ you did, help your colleagues understand _why_ you made your specific choices, and provide examples.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
 
-Your team will prepare and present a project poster at the end-of-course poster session.   This gives you an opportunity to present a short demo of your work and show what you have accomplished in the class!
+Overall logitics
+
+* 2 person teams: 6 min presentation, 5 min feedback
+* 1 person teams: 5 min presentation, 4 min feedback
+* Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5/6 minutes per practice :)*
+* Each team member should speak
+* Make sure all demos are embedded as GIFs or videos in your slides.
+* Staff will host and share their screen; we will change slides on your behalf
+
+Your presentation should cover (in content, not necessarily one slide for each point)
+
+* Motivation and *scientific hypotheses*
+* Technical challenge and contribution
+* Related work and how they are related
+* Simple example to illustrate idea
+* Technical insights/experimental findings so far
+* GIF/video of demos/screenshots (if applicable)
+* Feedback: 1-3 questions you’d like feedback on
 
 **Submission**
 
-* Simply attend and present at the poster session.
+* Submit URL to your group's [PDF file or google slides](#)
 
--->
+
 
 ### Report/Camera Ready
 
-You will prepare a conference-style report on your project with **maximum length** of 12 pages (10 pt font or larger, one or two columns, 1 inch margins, single or double spaced -- more is not better.) Your report should expand upon your prospectus and introduce and motivate the problem your project addresses, describe related work in the area, discuss the elements of your solution, and present results that measure the behavior, performance, or functionality of your system (with comparisons to other related systems as appropriate.)
-
+You will revise your draft and submit a conference-style report on your project, with **maximum length** of 12 pages. 
 Because this report is the primary deliverable upon which you will be graded, **do not treat it as an afterthought**. Plan to leave at least a week to do the writing, and make sure your proofread and edit carefully!
 
 **Submission**
 
-* [CMT website](https://cmt3.research.microsoft.com/W61132019/) by 5/10 11:59PM EST
-
-<!-- [**Click here to upload the file by 5/2 11:59PM EST**](https://www.dropbox.com/request/9zdikb92vHFFPYtaFF0e) -->
-
-
-
-
+* [Submit here](#) 
 
 <a name="suggestions"></a>
 ## Project Suggestions
@@ -195,6 +207,7 @@ The following are examples of possible projects -- they are by no means a comple
 5. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
 
 
+<!--
 
 khameleon
 
@@ -245,6 +258,7 @@ rain
 
 IFC for concurrency control
 
+-->
 
 
 <!--
