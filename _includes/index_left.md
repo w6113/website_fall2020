@@ -1,6 +1,8 @@
 #### Information 
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
+  <small>OH: Tues 3-4PM</small>   
+* [Deka Akbar](#) (TA)     
   <small>OH: TBA</small>   
 * Class: T/Th 11:30-1PM
 * [Syllabus & FAQ](./syllabus)
