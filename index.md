@@ -58,7 +58,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
       {% endif %}
       {% if r.notes %}
         <br/>
-        <span class='notes'>{{r.notes | safe}}</span>
+        <span class='notes'><a href="{{r.notes}}">notes</a></span>
       {% endif %}
       </td>
     <td class="notes">
