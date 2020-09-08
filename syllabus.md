@@ -33,10 +33,10 @@ See [./papers](./papers) for a description and expectations for paper reviews.
 
 
 
-#### Homeworks
+#### Assignments
 
 
-For Homeworks, you allowed 5 penalty free late days to use throughout the semester. One late day equals one 24 hour period after the due date of the assignment. Once you have used your late days, the assignment will be 0.    There is no need to tell the staff that you are using the late day.
+For assignments, you allowed 5 penalty free late days to use throughout the semester. One late day equals one 24 hour period after the due date of the assignment. Once you have used your late days, the assignment will be 0.    There is no need to tell the staff that you are using the late day.
 
 
 
@@ -109,10 +109,12 @@ Can I take both 6111 and 6113 for credit?
 Refer to [Columbia's academic honesty policy](http://www.cs.columbia.edu/education/honesty/) if you are at all unsure.
 
 You must write all the code you hand in for the programming assignments, except for code that we give you as part of the assignment. You are not allowed to look at anyone else's solution, you are not allowed to look at solutions from previous years, and you are not allowed to look at solutions from other universities. You may discuss the assignments with other students, but you may not look at or use each other's code. The same rule holds for the question assignments: you must write all answers yourself, not look at others' answers, but you can discuss the questions with others at a high level.
-You are also not allowed to look for or at solutions to the homeworks on the Internet. You can search for small pieces of code that solve small parts of your homeworks, and you may use tutorials to learn, however if you copy any code from anywhere, we request that you identify the origin in a comment in the code.
+You are also not allowed to look for or at solutions to the assignments on the Internet. You can search for small pieces of code that solve small parts of your assignments, and you may use tutorials to learn, however if you copy any code from anywhere, we request that you identify the origin in a comment in the code.
+
+Your reviews must be written originally, and be based on your own understanding and thoughts about the reading.  Copying or paraphrasing content written by others is not allowed.  
 
 Be advised that we will be running all assignments through the MOSS code similarity tool, which is very accurate even after significant amount of obfuscation, so we will identify and report anyone who attempts to breach this rule. We will include in our tests solutions from previous years both from Columbia and elsewhere. Both copy-ers and copy-ees will be punished. You are responsible for protecting your code and homeworks from others and not leaving them lying around in publicly open directories.
 
-Finally, you may discuss the questions for each question assignment with other students, but you may not look at other students' answers. You must write your answers yourself.
+Finally, you may discuss the questions for each assignment with other students, but you may not look at other students' answers. You must write your answers yourself.
 
 

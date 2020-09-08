@@ -15,8 +15,8 @@ title: W6113 Research Project
 
 Percentages are of your total class grade.
 
-* Proposal    10-01   (10%)
-* Paper Draft   10-29  (5%)
+* Proposal    10-01   (5%)
+* Paper Draft   10-29  (10%)
 * Presentation  12-10  (10%)
 * Report        12-14   (40%)
 

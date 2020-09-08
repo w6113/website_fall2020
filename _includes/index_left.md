@@ -17,15 +17,14 @@
 
 #### Grading 
 
-* [Project](./projects) <small>70%</small>
-  * Prospectus <small>10%</small>
-  * Paper Draft <small>5%</small>
-  * Mock PC <small>5%</small>
+* [Project](./projects) <small>65%</small>
+  * Proposal <small>5%</small>
+  * Paper Draft <small>10%</small>
   * Demo/Poster <small>10%</small>
   * Paper <small>40%</small>
-* [Participation](./syllabus#participation)  <small>20%</small>    
-  Inc. [paper reviews](./syllabus#reading)
-* [Assignments](./assignments) <small>10%</small>
+* [Participation](./syllabus#participation)  <small>10%</small>    
+* [Paper Reviews](./syllabus#reading) <small>10%</small>
+* [Assignments](./assignments) <small>15%</small>
 
 
 

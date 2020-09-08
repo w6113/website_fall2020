@@ -90,7 +90,7 @@ Some papers on reviewing papers
 <a name='review1' />
 ### Review
 
-* Required: [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
+* Optional: [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
 * Optional: [What goes around comes around](./files/papers/whatgoesaround-stonebraker.pdf)
 
 
