@@ -114,100 +114,184 @@ Because this report is the primary deliverable upon which you will be graded, **
 
 * [Submit here](#) 
 
+
+<a name="types"></a>
+## Project Types
+
+There are two broad categories of projects, the Reproduce and Extend Project, and the Research Project.
+
+#### Reproduce and Extend
+
+The goal of this type of project is to deeply understand how an existing problem is solved, and then slightly improve it.
+Once you pick a problem (basically, pick anything we mentioned in class, or any component of a system), read the literature to understand
+the different ways it has been solved.  This should require doing a literature search by using Google Scholar, surveys, and following citations.
+You should expect to read 5-10 or more papers, and to summarize them in your related works section.
+
+Since the best way to understand something is to implement it, you will then pick the best-in-class approach from your readings 
+and implement it in a system.  For a database algorithm or component, DataBass may be sufficient, or you may choose some other system.
+You will then benchmark your implementation and report on the results.
+
+After coding, debugging, benchmarking, debugging, laughing, crying, debugging the approach, you should be intimately familiar with the problem.
+At this point, introduce an improvement.  This can be a special case for a particular class of queries or data distribution, or exploiting a 
+hardware optimization, or leveraging some special property of a use case.  Once you implement the improvement, update your benchmarks and 
+explain the results.
+
+The final report should still be the same structure.  Naturally, the introduction will focus less on novelty, and more on how the system that you modified did not 
+take advantage of your implementation, and the motivation behind your improvement.   In contrast, your related work will be a detailed history and account of
+how this problem has been solved in the past and their pros and cons.
+
+
+#### Research Project
+
+The goal of this type of project is to identify a new problem, propose an algorithmic solution, and evaluate and report the findings.
+Its primary difference from the previous type of project is that it starts from a novel problem and seeks to solve it using whatever means make sense, 
+whereas Reproduce and Extend Projects start with established problems and solutions.
+
+The key challenge for this type of project is to establish novelty.  To do so, there should be _some_ example of your project that prior work cannot
+easily solve with some minor tweaks.  
+
+There are many sources of potential research projects.  Here are some ideas:
+
+* You may have encountered some data management problem and could not find a satisfying solution.  
+* You have an idea about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  
+* There are too many approaches to solve a problem and it's not clear which one to use under what conditions.  Run a bake-off and evaluate.
+* You did a Reproduce and Extend Project, and found that the approaches don't actually work in real scenarios.  Make it work
+
+
 <a name="suggestions"></a>
 ## Project Suggestions
 
 
-TBA
+### Reproduce and Extend
+
+Many of the following can be done by extending Databass' functionality
+
+Worst Case Optimal Joins
+
+* Read the literature on worst case optimal joins, and integrate it into DataBass (including extending the optimizer to choose it when applicable).
+
+Compilation
+
+* Extend Databass to generate rust or asm.js, or a custom IR.
+
+Columnar
+
+* Extend the Databass execution model to operate over columnar chunks such as Apache Arrow.
+  Bonus for late materialization or bitmapped execution.
+
+Lineage summarization
+
+* There's some interesting research on lineage summarization.  Extend Databass' lineage capture mechanisms
+  to automatically summarize/approximate lineage during capture.
+
+Incremental computation ala DBToaster
+
+* Extend Databass to perform incremental computation, where a standing query incrementally maintains its results as data streams in (say, via a scan)
+* Bonus points if it incrementally maintains the lineage indexes as well!
+
+Access Methods
+
+* Databass only supports scans.  Extend Databass with different access methods and extend the optimizer to recognize and use those access methods.
 
 <!--
-The following are examples of possible projects -- they are by no means a complete list and **you are free to select your own projects**.  In fact, a common source of ideas is to take your experience from another domain, and combine it with databases/data management.  Projects often come in several flavors:
+Benchmarking
 
-0. Make DataBass better: extend DataBass in a significant way, and evaluate it against other systems.  For instance, support DSM/PAX, Apache Arrow, distributed execution, LLVM compilation, lineage, etc.  Code quality matters for this option.
-1. Research project: model an unsolved problem, propose algorithmic solution, evaluate and report findings.
-2. Win: pick an existing useful application and a well-recognized metric (latency, prediction, etc) and win against the state of the art.
-3. Break and fix: implement a state of the art algorithm on real data, show that it doesn't actually work (results are poor, it's slow, etc), make it work.
-4. Evaluate: there are many options out there, it's not clear which ones are actually best, and under what conditions.  Run a bake-off and evaluate.
-5. Fill a gap:  think about something useful that _should_ be easily doable, but is painful or impossible with current state of the art.  Fill that gap.
+* benchmark vega and diff dataflow, find benchmarks
 -->
 
 
 
+### Research Projects
+
+Lineage Capture for Pandas
+
+* Fine-grained lineage is pretty useful, but no one uses Smoke.  Everyone does, however, use Pandas.  
+* IDEA: Is it possible to efficiently capture fine-grained lineage in Pandas (or with a pandas compatible API)?
+* Solving this fully is not realistic, but it is feasible to perform a feasibility study.
+  For instance, hand instrument a few Pandas operators to understand what would be needed to
+  instrument the rest of the library.  Benchmark those operators and understand where the
+  overheads come from.
+
+
+Applications of Fine-grained Lineage
+
+* Most use cases of fine-grained lineage are kind of boring: visualizing the lineage as a node-link graph, 
+  debugging, view updates, responsibility.  Explore more interesting uses of lineage.
+* IDEA: Most people interact with data through a visualization that cleary defines how its axes map to attributes 
+  in the rendered data; the rendered data may be a query result.  When the user points to bars and circles in
+  the visualization, lineage tells us what the inputs are.  Is there a way to leverage the query and visualization
+  automatically choose a good way to render the lineage?
+* IDEA: The [Smoke HILDA paper](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0) outlined how
+  lineage could be used to make implementing interactive applications easier, but it mainly said that it 
+  "should be possible". It's not clear what the appropriate programming interface should actually 
+  be: should it really be standard backward forward lineage queries?  Or something higher level?
+  Propose an API and build some cool lineage-oriented apps using it..
+
+
+Query Language and Execution Pushdown for DiffParsing
+
+* A common way to analyze query logs and evolving code bases is to study how the queries/programs change over time.
+  This is typically done by parsing the queries into ASTs, and then comparing tree differences between queries. 
+  Suppose there are N queries, then this requires parsing the N queries, and then an N^2 pairwise tree alignment.
+* DiffParsing is an existing project that combines tree differencing into parsing.  The idea is that divergences
+  during parsing are exactly the points where the resulting ASTs will be different, so there is no need for a
+  separate alignment step. There is an implementation of the core DiffParsing algorithm.
+* IDEA: Design a query language over the dataset of tree differences, and show that it can be applied to interesting use cases.
+  This language should at minimum support filters and aggregations.
+  Then implement optimizations that push as much of the query into the DiffParsing algorithm as is efficient,
+  to avoid unnecessary materialization.
+
+
+Reality Access Methods
+
+* [RealitySketch](https://ryosuzuki.org/realitysketch/) is an amazing HCI project, watch its video.
+  From a database perspective, their project turns ipad video annotations into an access method _of the real world_.
+  When they circle the pendulum, it turns into a table with schema (time, angle, x, y).
+* IDEA: Can you brainstorm ways to make it incredibly easy
+  * for normal users to create new "reality access methods"?  
+  * to be able to write and run queries over these access methods?
+* Phone sensors, video, audio, touch screens, wireless signals, etc.  You're limited by your imagination.
+
+Progressively encoded cubes
+
+* [Khameleon](https://medium.com/thewulab/for-responsive-interactive-apps-prediction-is-not-enough-3188bc7b53db) ([video](https://www.youtube.com/watch?v=oiU5xytHMm4)) 
+  is a project that masks communication latencies for cloud-based interactive applications.  To do so, it leverages progressive encoding
+  by prefetching very little data for less likely requests, but lots of data for the most likely requests.
+* Progressive encoding transforms a data item into a sequence of bytes where any prefix is an approximate result.
+  JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
+  Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering.
+* IDEA: Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?
+  In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
+   
+
+Orchestrating Learned Components
+
+* Systems are increasingly using learned components to automatically make local optimization decisions.
+  A learned index examines the sequence of reads and writes to decide how to optimize its internal layout.
+  A workload optimizer examples the sequence of queries to decide how to optimize the database layout.
+  A learned buffer pool manager may see the sequence of page accesses to decide on the replacement policy.
+* The challenge is that the sequence of data available to the learned component is too low level.
+  In the database, upper layers constantly communicate with lower layers.
+  the choice of join algorithm (in the executor) is used as a hint to the buffer pool replacement strategy.  
+* IDEA: A learned component can be modeled as RL to decide policies that change the component.
+  Can useful features from one part of a system improve the effectiveness of a learned component?
+  This project would test the feasibility in several stages.  
+  1. Find a learned index.  Show that by adding hand crafted informative features that upper layers
+     of the database would know, it can be used to improve the model's forecasting accuracy.
+    Ideally, it does not require mucking with the internals of the RL model.
+  1. Show that a mixture of informative and uninformative features can still be effective..
+  1. Show that this actually improves the performance on serial workloads (one query, then another).
+  1. Show that this actually improves the performance on concurrent workloads (query accesses are interleaved).
+* Informative features could come from
+  * The application interface.  For instance, when a user hovers over a button that will trigger queries that use the index.  The feature could be the hover event.
+  * AST/query plan features (such as predicate values) known before the query actually runs.  
+  * Physical operators chosen by the optimizer.  
 
 
 <!--
-
-khameleon
-
-* serverless/lmfao -> scalable backend
-* progressively encoded and computed data cubes
-
-databass/pysmoke
-
-* apps of lineage
-  * visualize lineage by leveraging the charts and queries 
-    used to generate the lineage
-  * smoke hilda
-* add WCO joins and explore vicktor's paper
-* databass -> rust / js
-* columnar
-* incorporate something interesting fro the readings
-  * why not summarization
-* use databass to do incremental computation in an incremental fashion (dbtoaster)
-  * bonus: incremntally maintain lineage indexes
-* benchmark vega and diff dataflow, find benchmarks
-* add an IR, define the IR
-* adding different access methods and extend optimizer to recognize
-
-evaluate ml in databases
-
-smoke for pandas?
-
-* hand instrument c code for some operators to show feasibility
-
-* expand on diffparsing with query language, apply to non-sql programs
-
-cross layer signals for ML in systems
-
-* informative features come from
-  * interface feoatures from a viz that generate queries that run on the index
-  * ast/query plan features that are known before the query is executed
-  * batches of data that are inserted into the index
-* find a learned index, show that adding occassional informative features 
-  improves the model accuracy
-* show that adding a mixture of informative and uninformative features 
-* show that it improves the actual index performance on serial workloads
-* what happens on a mixture of concurrent workloads
-* connect to logging infrastructure
-
-combining a streaming system with realitysketch ideas
 
 rain
 
 IFC for concurrency control
-
--->
-
-
-<!--
-
-Potential ideas
-
-* Apache Arrow is the defacto standard for moving data around.  Build an in-browser fast execution engine for apache arrow using asm and typed arrays.  You can assume that only foreign key joins are used (cardinality will not explode).
-* query compiler to rust
-* RL across execution layers 
-* Some RL + data structure business
-
-
-* Visualizations and clients currently need to poll from materialized
-  * the system supports creating streaming sinks
-  * extend vega lite to rewrite subsets of the spec into
-    materialized views that can stream changes directly to the client.
-
-use lineage in interesting ways
-
-* not "show inputs", not "whynot"
-* actually use it -- implement smoke hilda
-
 
 -->
