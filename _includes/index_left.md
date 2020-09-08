@@ -7,6 +7,7 @@
 * [Slack](https://w6113-f20.slack.com)
 * [Project](./projects)
 * [Papers](./papers)
+* [Reviews Wiki](https://github.com/w6113/w6113.github.io/wiki)
 
 
 #### Prereqs
@@ -23,7 +24,7 @@
   * Demo/Poster <small>10%</small>
   * Paper <small>40%</small>
 * [Participation](./syllabus#participation)  <small>10%</small>    
-* [Paper Reviews](./syllabus#reading) <small>10%</small>
+* [Paper Reviews](./papers) <small>10%</small>
 * [Assignments](./assignments) <small>15%</small>
 
 

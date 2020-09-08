@@ -11,48 +11,18 @@ You can discuss questions and ask for clarifications with your colleagues and/or
 We may select a random review to read and discuss in class.  This serves to highlight important characteristics of reading papers and writing good reviews.
 
 
-<!--
-[SUBMIT YOUR REVIEW HERE](https://goo.gl/forms/ymmD3tIBTWpQO7ME2)
-
-Below are a few aspects of the readings to think about.  I have randomly assigned teams to think about each aspect.
-After I release paper reviews, discuss among your team what your consensus response will be.
-Teams will elect a leader to present their consensus in class.
-
-
-* Problem: 
-  * What problem is this idea/system solving?  Is that important?  Why?  Provide evidence.
-* State-of-the-art: 
-  * What was the previous state-of-the-art (in the same field or other fields)? How, and how much does this system advance state of art?   Justify with evidence.
-* How?   
-  * How does the idea/system work? What are the key insights? Provide concrete examples that highlight extreme design points.
-* Results: 
-  * How SHOULD the technique be evaluated?  How was the technique evaluated?   What were key results?
-* The Future: 
-  * What would follow-on research to this paper be?  Propose an actual design of the research.  e.g.,
-    * Improve an algorithm in the paper;   
-    * Find a new, significant evaluation question for it;   
-    * A brand-new way to address the same problem/goal. 
-* Applier:  
-  * Think beyond this paper.  What is the most different interesting application/use case that this paper (or its ideas) enables?  Justify.
-* Hater: 
-  * Identify the deepest weaknesses in the paper.  Identify flaws in both categories below, and describe how to address the weaknesses:
-    * The technical work: are there limitations or flawed assumptions?  Look for aspects that break the paper.  
-    * The presentation of the paper: look for poorly explained portions, logical inconsistencies, argumentation that is flawed.
-
-Structure borrowed from Ethan Katz Bassett’s course on Internet Service Delivery. 
--->
-
 ### Submission
 
 Overview
 
 * Reviews are due **10AM EST day before lecture**.  
 * Late submissions are given a score of 0 without prior approval.  
-* You may miss submissions for up to **2 lectures**.
+* You may miss submissions for up to **4 lectures**.
 * To submit:
-  * [Go to the class wiki](https://github.com/w6113/w6113.github.io/wiki) and click on the appropriate topic
+  * [**Go to the class wiki**](https://github.com/w6113/w6113.github.io/wiki) and click on the appropriate topic
   * Read the instructions at the top
-  * Add your reviews
+  * Click "Edit" in the upper right. 
+  * Add your review
 
 ### Reading Tips
 
