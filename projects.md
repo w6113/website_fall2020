@@ -317,6 +317,7 @@ IDEA: Extend Khameleon's predictor and scheduler to circumvent these inefficienc
 Read the paper and then talk to Eugene in OH.
 
 
+
 #### ML+Systems
 
 ##### Orchestrating Learned Components
@@ -346,6 +347,25 @@ Informative features could come from
 * The application interface.  For instance, when a user hovers over a button that will trigger queries that use the index.  The feature could be the hover event.
 * AST/query plan features (such as predicate values) known before the query actually runs.  
 * Physical operators chosen by the optimizer.  
+
+
+##### Benchmarking Workloads
+
+A benefit of learned DB systems is that they evolve with the workload, thus a good metric is how quickly
+a learned DB can adapt to a new workload and achieve good performance.
+However, what is a good "evolution workload" to evaluate learned DB systems on?
+It's hard enough to create benchmarks like TPC-H/DS for non-learned databases.  
+
+IDEA: use schema matching to adapt the query workload from an existing benchmark to
+run on the dataset of another benchmark.  For instance, we would like to run the TPC-H
+query workload on the TPC-DS dataset.  In this way, we can measure how quickly a learned DB
+transitions from a TPC-DS workload to the "mapped TPC-H" workload.
+This can be very useful for the Learned DBs field.
+Creating an evolved benchmark requires several steps:
+
+* Apply schema mapping from benchmark 1's dataset to benchmark 2's dataset.  There may be multiple valid mappings.
+* Use a valid mapping to map benchmark 1's queries to benchmark 2's dataset.
+* Profit (actually, run a few database systems on the evolved benchmark).
 
 
 
