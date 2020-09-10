@@ -2,8 +2,8 @@
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
   <small>OH: Tues 3-4PM</small>   
-* [Deka Akbar](#) (TA)     
-  <small>OH: Fri 5-7PM</small>   
+* [Deka Akbar](https://dekauliya.me) (TA)     
+  <small>OH: Fri 5-7PM (tentative) </small>   
 * Class: T/Th 11:30-1PM
 * Recitation: T 2-3PM   
   <small><a href="https://goo.gl/maps/voXFEY8DjseGCDkSA">113th and Morningside Dr</a></small>
