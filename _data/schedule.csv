@@ -1,6 +1,6 @@
 color,date,slug,link,notes,presenter,assigned,due
 #fdf3fd,Tue 09-08,Intro,,./lecs/01.pdf,wu,"<a href=""https://github.com/w6113/databass-public/tree/master/docs"">A0</a>",
-#fdf3fd,Thu 09-10,Review,review1,,wu,A1,A0  (9/13 11:59pm)
+#fdf3fd,Thu 09-10,Review,review1,https://www.dropbox.com/s/m3yxq0lrane9yqk/2020%20notes.pdf?dl=0,wu,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/a1.md"">A1</a>",A0  (9/13 11:59pm)
 white,Tue 09-15,Multi-dim Indexes,indexes,,wu,,
 white,Thu 09-17,Single machine joins,join,,wu,A2,A1 (9/20 11:59pm)
 #fdf3fd,Tue 09-22,Distributed joins,distjoin,,,,
