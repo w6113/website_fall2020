@@ -282,13 +282,27 @@ IDEA: Design a query language over the dataset of tree differences, and show tha
 
 [RealitySketch](https://ryosuzuki.org/realitysketch/) is an amazing HCI project, watch its video.
 From a database perspective, their project turns ipad video annotations into an access method _of the real world_.
-When they circle the pendulum, it turns into a table with schema (time, angle, x, y).
+When they circle the pendulum, it turns into a table with schema (time, angle, x, y).  
 
-IDEA: Can you brainstorm ways to make it incredibly easy
 
-* for normal users to create new "reality access methods"?  
-* to be able to write and run queries over these access methods?
-* Phone sensors, video, audio, touch screens, wireless signals, etc.  You're limited by your imagination.
+IDEA 1: in an image or video containing many objects of the same type (balls, forest, crowd),
+enable the ability to highlight an instance of the object, parameterize it, and then query the entire scene/video.
+The way RealitySketch does this is by sketching on the ipad and specifying how the scene should be parameterized (see paper),
+but other methods are possible.
+One approach could be
+
+* Use realitysketch's method, or use one-shot learning to train an object detector
+* Apply detector to rest of image/scene/video
+* Extract parameters from detected objects
+* Expose query interface
+
+IDEA 2: make it incredibly easy for normal users to create new "reality access methods", and to be able to
+query over these access methods.  These access methods could be based on phone sensors, video, audio, touch screens, wireless signals, etc. 
+
+
+
+
+
 
 
 #### Progressive Computation and Khameleon
