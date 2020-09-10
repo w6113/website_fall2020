@@ -144,7 +144,7 @@ how this problem has been solved in the past and their pros and cons.
 
 The goal of this type of project is to identify a new problem, propose an algorithmic solution, and evaluate and report the findings.
 Its primary difference from the previous type of project is that it starts from a novel problem and seeks to solve it using whatever means make sense, 
-whereas Reproduce and Extend Projects start with established problems and solutions.
+whereas Reproduce and Extend Projects start with an established problem and solution.
 
 The key challenge for this type of project is to establish novelty.  To do so, there should be _some_ example of your project that prior work cannot
 easily solve with some minor tweaks.  
@@ -202,89 +202,152 @@ Benchmarking
 
 ### Research Projects
 
-Lineage Capture for Pandas
+The following are potential research projects.  Read the relevant papers and come to OH if you are interested in any of them.
 
-* Fine-grained lineage is pretty useful, but no one uses Smoke.  Everyone does, however, use Pandas.  
-* IDEA: Is it possible to efficiently capture fine-grained lineage in Pandas (or with a pandas compatible API)?
+
+#### Lineage
+
+##### Lineage Capture for Pandas
+
+Fine-grained lineage is very useful, and [Smoke](https://arxiv.org/abs/1801.07237) is the fastest lineage capture engine.
+Unfortunately, it's not a full query engine and no one uses it.  Everyone does, however, use Pandas.  
+
+IDEA: Is it possible to efficiently capture fine-grained lineage in Pandas (or with a pandas compatible API)?
+
 * Solving this fully is not realistic, but it is feasible to perform a feasibility study.
   For instance, hand instrument a few Pandas operators to understand what would be needed to
   instrument the rest of the library.  Benchmark those operators and understand where the
   overheads come from.
 
+##### Lineage for Optimizing Query Execution
 
-Applications of Fine-grained Lineage
+The [Smoke paper](https://arxiv.org/abs/1801.07237) described several workload aware optimizations that leverage
+lineage capture to build data structures that benefit later queries.  This form of "adaptive" query optimization
+is a neat idea.  Of course, capturing lineage incurs a runtime and storage overhead, so it is not free.  Further,
+the examples in the paper were hand-written feasibility studies, so the query optimizer is not actually aware of
+the lineage-based data structures.  
 
-* Most use cases of fine-grained lineage are kind of boring: visualizing the lineage as a node-link graph, 
-  debugging, view updates, responsibility.  Explore more interesting uses of lineage.
-* IDEA: Most people interact with data through a visualization that cleary defines how its axes map to attributes 
+IDEA: Extend DataBass to support and manage lineage-based data strutures:
+
+* Design a low-overhead resource management module that turns off lineage capture once its runtime or storage
+  overhead exceeds some threshold.  The threshold could be per-query or database-wide
+* Extend the lineage capture logic to generate workload-aware lineage data structures, instead of or in addition to
+  the existing lineage indexes.
+* Bonus: extend the optimizer to use these data structures.
+
+
+##### Applications of Fine-grained Lineage
+
+Lineage is typically used for a small set of well defined use cases: [visualizing the lineage](https://www.cs.ubc.ca/~mkmilani/pastwatch.pdf) as a [node-link graph](https://web.cs.ucdavis.edu/~ludaesch/pubs/Provenance-Browser-ICDE-2010.pdf)
+[debugging](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf), [view updates](https://d1wqtxts1xzle7.cloudfront.net/42047143/Provenance_in_Databases_Why_How_and_Wher20160204-16814-ky9amz.pdf?1454595616=&response-content-disposition=inline%3B+filename%3DProvenance_in_Databases_Why_How_and_Wher.pdf&Expires=1599740653&Signature=IOywJW9BodOgh9opL09WgM3Q5Iri4ZoSI46~JvlbvO1bMa7f7HMExc67ySNshhv07iCFXVA2-Fhis6LZ-iSXYfqtozohw49uqC8JM0c7FynZLOsRuQqyHVZFT82MvJITWy1cLWdx6fo5EsKMEmdao66T4FX1fPvwfS2rG5Qkf8ujoC8t6TIy1ZdZVffbCJ3sqcfMrwULMzOgkYZJQMtIi9GUcAd4tZ40KkyvlC6Xa~JmDRXBtenCJatuTzm45X2hz3TGqZubfaxyI8pHi1yLBqnqVkeMiFgIgM0ldW9MrJyzcBfUjhG1aG5aYGNx0991IVnRqZQji9Pnw9kwUG6cBA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA),
+responsibility.  Explore alternative uses of lineage.
+
+IDEA 1: Most people interact with data through a visualization that cleary defines how its axes map to attributes 
   in the rendered data; the rendered data may be a query result.  When the user points to bars and circles in
   the visualization, lineage tells us what the inputs are.  Is there a way to leverage the query and visualization
   automatically choose a good way to render the lineage?
-* IDEA: The [Smoke HILDA paper](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0) outlined how
-  lineage could be used to make implementing interactive applications easier, but it mainly said that it 
-  "should be possible". It's not clear what the appropriate programming interface should actually 
-  be: should it really be standard backward forward lineage queries?  Or something higher level?
-  Propose an API and build some cool lineage-oriented apps using it..
+
+IDEA 2: The [Smoke HILDA paper](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0) outlined how
+  lineage could be used to make implementing interactive applications easier. It mainly said that it 
+  "should be possible", but didn't flesh out the actual library.  Recommend a potential library by building out
+  a practical use case and reporting on the lessons learned.  
+
+* One use case is linked visualization.
+  Linked-visualization refers to the ability to interact with data in an chart, and update the other charts to reflect the selected data.
+  [Crossfilter is a popular example](https://square.github.io/crossfilter/), but is limited to simple count-aggregation queries. 
+  Design a dashboard system that lets the user submit and visualize multiple SQL queries; extend DataBass' lineage system
+  to automatically support linking between any of the visualized results.
 
 
-Query Language and Execution Pushdown for DiffParsing
+#### Querying and Access Methods
 
-* A common way to analyze query logs and evolving code bases is to study how the queries/programs change over time.
-  This is typically done by parsing the queries into ASTs, and then comparing tree differences between queries. 
-  Suppose there are N queries, then this requires parsing the N queries, and then an N^2 pairwise tree alignment.
-* DiffParsing is an existing project that combines tree differencing into parsing.  The idea is that divergences
-  during parsing are exactly the points where the resulting ASTs will be different, so there is no need for a
-  separate alignment step. There is an implementation of the core DiffParsing algorithm.
-* IDEA: Design a query language over the dataset of tree differences, and show that it can be applied to interesting use cases.
-  This language should at minimum support filters and aggregations.
+##### Query Language and Execution Pushdown for DiffParsing
+
+A common way to analyze query logs and evolving code bases is to study how the queries/programs change over time.
+This is typically done by parsing the queries into ASTs, and then comparing tree differences between queries. 
+Suppose there are N queries, then this requires parsing the N queries, and then an N^2 pairwise tree alignment.
+
+DiffParsing is an existing project that combines tree differencing into parsing.  The idea is that divergences
+during parsing are exactly the points where the resulting ASTs will be different, so there is no need for a
+separate alignment step. There is an implementation of the core DiffParsing algorithm.
+
+IDEA: Design a query language over the dataset of tree differences, and show that it can be applied to interesting use cases.
+
+* This language should at minimum support filters and aggregations.
   Then implement optimizations that push as much of the query into the DiffParsing algorithm as is efficient,
   to avoid unnecessary materialization.
 
 
-Reality Access Methods
+##### Reality Access Methods
 
-* [RealitySketch](https://ryosuzuki.org/realitysketch/) is an amazing HCI project, watch its video.
-  From a database perspective, their project turns ipad video annotations into an access method _of the real world_.
-  When they circle the pendulum, it turns into a table with schema (time, angle, x, y).
-* IDEA: Can you brainstorm ways to make it incredibly easy
-  * for normal users to create new "reality access methods"?  
-  * to be able to write and run queries over these access methods?
+[RealitySketch](https://ryosuzuki.org/realitysketch/) is an amazing HCI project, watch its video.
+From a database perspective, their project turns ipad video annotations into an access method _of the real world_.
+When they circle the pendulum, it turns into a table with schema (time, angle, x, y).
+
+IDEA: Can you brainstorm ways to make it incredibly easy
+
+* for normal users to create new "reality access methods"?  
+* to be able to write and run queries over these access methods?
 * Phone sensors, video, audio, touch screens, wireless signals, etc.  You're limited by your imagination.
 
-Progressively encoded cubes
 
-* [Khameleon](https://medium.com/thewulab/for-responsive-interactive-apps-prediction-is-not-enough-3188bc7b53db) ([video](https://www.youtube.com/watch?v=oiU5xytHMm4)) 
-  is a project that masks communication latencies for cloud-based interactive applications.  To do so, it leverages progressive encoding
-  by prefetching very little data for less likely requests, but lots of data for the most likely requests.
-* Progressive encoding transforms a data item into a sequence of bytes where any prefix is an approximate result.
-  JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
-  Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering.
-* IDEA: Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?
+#### Progressive Computation and Khameleon
+
+
+[Khameleon](https://medium.com/thewulab/for-responsive-interactive-apps-prediction-is-not-enough-3188bc7b53db) ([video](https://www.youtube.com/watch?v=oiU5xytHMm4)) 
+is a project that masks communication latencies for cloud-based interactive applications.  To do so, it leverages progressive encoding
+by prefetching very little data for less likely requests, but lots of data for the most likely requests.
+
+##### Progressively encoded cubes
+
+Progressive encoding transforms a data item into a sequence of bytes where any prefix is an approximate result.
+JPEG is an example of progressively encoded data, a few bytes shows a low quality image, and adding a few more bytes improve the quality.
+Similarly, a breadth-first ordering of a secondary index is a progressive encoding -- larger prefixes correspond to a deeper tree that is more effective at filtering.
+
+IDEA: Is it possible to compute and return a progressively encoded data cube, where larger prefixes correspond to finer granularities for the useful dimensions?
   In other words, can you devise an algorithm that returns a progressively encoded data cube in less time than computing the cube and then encoding it?
    
+##### Interactively Explore 1M+ images
 
-Orchestrating Learned Components
+The Khameleon paper was evaluated on an application that explores 10K images, however large image datasets contain 1M+ images, stored on scalable but remote services like EC2.
+In [the extended technical report](https://arxiv.org/pdf/2007.07858.pdf), Figure 16 shows that Khameleon's greedy scheduler does not scale well as the number of possible requests increases.
+This is primarily because of inefficiencies in how the scheduler interacts with the prediction distributions.
 
-* Systems are increasingly using learned components to automatically make local optimization decisions.
-  A learned index examines the sequence of reads and writes to decide how to optimize its internal layout.
-  A workload optimizer examples the sequence of queries to decide how to optimize the database layout.
-  A learned buffer pool manager may see the sequence of page accesses to decide on the replacement policy.
-* The challenge is that the sequence of data available to the learned component is too low level.
-  In the database, upper layers constantly communicate with lower layers.
-  the choice of join algorithm (in the executor) is used as a hint to the buffer pool replacement strategy.  
-* IDEA: A learned component can be modeled as RL to decide policies that change the component.
+IDEA: Extend Khameleon's predictor and scheduler to circumvent these inefficiencies, and build a demo that can explore 1M+ images.   There are many massive image corpi that this would be very useful for.
+Read the paper and then talk to Eugene in OH.
+
+
+#### ML+Systems
+
+##### Orchestrating Learned Components
+
+Systems are increasingly using learned components to automatically make local optimization decisions.
+A learned index examines the sequence of reads and writes to decide how to optimize its internal layout.
+A workload optimizer examples the sequence of queries to decide how to optimize the database layout.
+A learned buffer pool manager may see the sequence of page accesses to decide on the replacement policy.
+
+The challenge is that the sequence of data available to the learned component is too low level.
+In the database, upper layers constantly communicate with lower layers.
+the choice of join algorithm (in the executor) is used as a hint to the buffer pool replacement strategy.  
+
+IDEA: A learned component can be modeled as RL to decide policies that change the component.
   Can useful features from one part of a system improve the effectiveness of a learned component?
   This project would test the feasibility in several stages.  
-  1. Find a learned index.  Show that by adding hand crafted informative features that upper layers
-     of the database would know, it can be used to improve the model's forecasting accuracy.
-    Ideally, it does not require mucking with the internals of the RL model.
-  1. Show that a mixture of informative and uninformative features can still be effective..
-  1. Show that this actually improves the performance on serial workloads (one query, then another).
-  1. Show that this actually improves the performance on concurrent workloads (query accesses are interleaved).
-* Informative features could come from
-  * The application interface.  For instance, when a user hovers over a button that will trigger queries that use the index.  The feature could be the hover event.
-  * AST/query plan features (such as predicate values) known before the query actually runs.  
-  * Physical operators chosen by the optimizer.  
+
+1. Find a learned index.  Show that by adding hand crafted informative features that upper layers
+   of the database would know, it can be used to improve the model's forecasting accuracy.
+  Ideally, it does not require mucking with the internals of the RL model.
+1. Show that a mixture of informative and uninformative features can still be effective..
+1. Show that this actually improves the performance on serial workloads (one query, then another).
+1. Show that this actually improves the performance on concurrent workloads (query accesses are interleaved).
+
+Informative features could come from
+
+* The application interface.  For instance, when a user hovers over a button that will trigger queries that use the index.  The feature could be the hover event.
+* AST/query plan features (such as predicate values) known before the query actually runs.  
+* Physical operators chosen by the optimizer.  
+
+
 
 
 <!--
