@@ -15,7 +15,7 @@ We may select a random review to read and discuss in class.  This serves to high
 
 Overview
 
-* Reviews are due **10AM EST day before lecture**.  
+* Reviews are due **10AM EST one day before lecture** (except for the Indexes paper which is due on Tue, 9/15).  
 * Late submissions are given a score of 0 without prior approval.  
 * You may miss submissions for up to **4 lectures**.
 * To submit:
