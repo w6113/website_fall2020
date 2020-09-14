@@ -73,7 +73,7 @@ Readings
 * Optional: [Generalized Search Trees for Database Systems](./files/papers/gist-vldb95.pdf)
 * Optional: [Survey: Modern B-Tree Techniques](./files/papers/btreesurvey-graefe.pdf)
 * Optional: [Qd-tree](https://dl.acm.org/doi/10.1145/3318464.3389770)
-* Optional: [FITing-Tree](https://dl.acm.org/doi/pdf/10.1145/3299869.3319860)
+* Optional: [Tsunami: Learned Multi-dim Indexes](https://arxiv.org/pdf/2006.13282.pdf?TB_iframe=true&width=370.8&height=658.8)
 
 Some things to think about:
 
