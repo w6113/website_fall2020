@@ -20,7 +20,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 #### Recent Announcements
 
 * [Assignment 0](./assignments) released, no review for Thursday 9/10.
-* [Assignment 1](./assignments) released, first paper review is due 10AM EST on Tue 9/15.
+* [Assignment 1](./assignments) has released, [first paper review (Indexes)](./papers#indexes) is due 10AM EST on Tue 9/15.
 
 #### Tentative Schedule
 
