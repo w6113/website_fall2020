@@ -23,6 +23,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 * [Assignment 1](./assignments) has released, [first paper review (Indexes)](./papers#indexes) is due 10AM EST on Tue 9/15.
 * Solution for A0 is released.
 
+
 #### Tentative Schedule
 
 
