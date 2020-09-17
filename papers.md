@@ -128,6 +128,7 @@ Readings
 ### Cloud-scale Analytics
 
 * Required: [Dremel Test-of-Time Keynote](https://www.youtube.com/watch?v=9GutzPX6ufo)
+* Optional: [The Snowflake Elastic Data Warehouse](./files/papers/snowflake.pdf)
 * Optional: [Dremel: A Decade of Interactive SQL Analysis at Web Scale](http://www.vldb.org/pvldb/vol13/p3461-melnik.pdf)
 * Optional: [Dewitt's Cloud DB talk slides](./files/papers/dewittclouddbtalk.pptx)
 * Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
