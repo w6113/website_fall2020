@@ -1,23 +1,23 @@
 color,date,slug,link,notes,presenter,assigned,due
 #fdf3fd,Tue 09-08,Intro,,"<a href=""./lecs/01.pdf"">notes</a>",wu,"<a href=""https://github.com/w6113/databass-public/tree/master/docs"">A0</a>",
 #fdf3fd,Thu 09-10,Review,review1,"<a href=""https://www.dropbox.com/s/m3yxq0lrane9yqk/2020%20notes.pdf?dl=0"">notes</a>",wu,"<a href=""https://github.com/w6113/databass-public/blob/master/docs/a1.md"">A1</a>",A0  (9/13 11:59pm)
-white,Tue 09-15,Multi-dim Indexes,indexes,,wu,,
+white,Tue 09-15,Multi-dim Indexes,indexes,"<a href=""https://www.dropbox.com/s/m3yxq0lrane9yqk/2020%20notes.pdf?dl=0"">notes</a>",wu,,
 white,Thu 09-17,Single machine joins,join,,wu,A2,A1 (9/20 11:59pm)
 #fdf3fd,Tue 09-22,Distributed joins,distjoin,,,,
 #fdf3fd,Thu 09-24,Volcano Exchange,exchange,,,,
-white,Tue 09-29,Volcano/Cascades Optimizer,cascades,,,,
+white,Tue 09-29,Volcano/Cascades Optimizer,cascades,"Bonus: DB seminar talk by <a href=""http://stoyanovich.org/"">Julia Stoyanovich</a> (NYU) on Responsible Data Management",,,
 white,Thu 10-01,Column Stores,colstore,,,A3,"A2 (10/4 11:59pm)<br/><a href=""./projects#prospectus"">Prospectus</a>"
 #fdf3fd,Tue 10-06,Cloud Analytics,cloudanalytics,,,,
 #fdf3fd,Thu 10-08,Query Compilation,compilation,,,,
-white,Tue 10-13,Hybrid Caching/UDFs,udfs,"Bonus: DB seminar talk by <a href=""https://gatterbauer.name"">Wolfgang Gatterbauer</a> on <a href=""https://queryvis.com/"">QueryViz</a>",,A4,A3  (10/14 11:59pm)
+white,Tue 10-13,Hybrid Caching/UDFs,udfs,"Bonus: DB seminar talk by <a href=""https://gatterbauer.name"">Wolfgang Gatterbauer</a> (Northeastern) on <a href=""https://queryvis.com/"">QueryViz</a>",,A4,A3  (10/14 11:59pm)
 white,Thu 10-15,Large-scale Dataflow 1,dataflow1,,,,
-#fdf3fd,Tue 10-20,Large-scale Dataflow 2,dataflow2,,,,
+#fdf3fd,Tue 10-20,Large-scale Dataflow 2,dataflow2,"Bonus: DB seminar talk by <a href=""https://www.microsoft.com/en-us/research/people/kokarana/"">Kostas Karanasos</a> (Microsoft Gray Labs) on Their lab and In-DBMS ML",,,
 #fdf3fd,Thu 10-22,Materialized Views,matviews,,,,"<a href=""./midpoint"">Paper Draft Due</a>"
 white,Tue 10-27,Streaming DB Research,naiad,"No class, Prof Vasiliki talk at 4PM","<a href=""https://cs-people.bu.edu/vkalavri/"">Prof. Vasiliki (Boston U)</a>",A5,A4 (10/28 11:59pm)
 white,Thu 10-29,Maintaining Materialized Views,incmatviews,,,,
 #fdf3fd,Tue 11-03,-,,,,,
 #fdf3fd,Thu 11-05,Datalog and Recursion,datalog,,,,
-white,Tue 11-10,Lineage,lineage,,,,
+white,Tue 11-10,Lineage,lineage,"Bonus: DB seminar talk by <a href=""http://people.cs.uchicago.edu/~aelmore/"">Aaron Elmore</a> (U Chicago) on CrocodileDB",,,
 white,Thu 11-12,Consistency under Replication,replication,,,,A5 (11/13 11:59pm)
 #fdf3fd,Tue 11-17,Optimistic and MVCC,occ,,,,
 #fdf3fd,Thu 11-19,tba,,,,,
@@ -26,5 +26,6 @@ white,Thu 11-26,-,,,,,
 #fdf3fd,Tue 12-01,System R overview,sysr,,,,
 #fdf3fd,Thu 12-03,Ingres/Postgres,postgres,,,,
 white,Tue 12-08,Physical Database Design,pvd,,,,
+white,Wed 12-09,-,,"Bonus: DSI Data for Good talk by <a href=""https://sites.google.com/site/congyu/home"">Cong Yu</a> (Google, Structured Data Group) on (TBD, fact checking or structured snippets?).",,,
 white,Thu 12-10,Presentations (10 min/group),,,,,Presentations (10 min/group
 #fdf3fd,Tue 12-14,-,,,,,Project Report
