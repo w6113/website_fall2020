@@ -97,7 +97,7 @@ Readings
 
 * Required: [The Gamma database machine project](https://wiki.epfl.ch/edicpublic/documents/Candidacy%20exam/gamma.pdf)
 * Optional: [TrackJoin](./files/papers/trackjoin-sigmod14.pdf)
-* Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt)
+* Optional: [Parallel Database systems: the future of high performance database systems](./files/papers/paralleldbsystems-dewitt.pdf)
 * Optional: [Pushing Data-Induced Predicates Through Joins in Big-Data Clusters](http://www.vldb.org/pvldb/vol13/p252-orr.pdf)
 
 
