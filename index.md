@@ -18,8 +18,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 
 
 #### Recent Announcements
-
-* (09/17) Patch for A1 has been released.
+* (09/23) Solution for A1 is released. A2 is released.
 
 
 #### Tentative Schedule
