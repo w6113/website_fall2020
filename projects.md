@@ -45,7 +45,7 @@ We have setup a template for your proposal on overleaf.  Clone it into your team
 **Submission**
 
 1. Use the [proposal template on Overleaf](https://www.overleaf.com/read/xhpgqyqbghry)
-1. [Click here to submit](#)
+1. [Click here to submit](https://www.dropbox.com/request/4twBRI2OeuplW2rSV4Ih)
 
 
 
