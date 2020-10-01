@@ -110,6 +110,19 @@ Readings
 * Optional: [SEDA: An Architecture for Well-Conditioned, Scalable Internet Services](http://www.sosp.org/2001/papers/welsh.pdf)
 
 
+<a name='cascades' />
+### Top-down Optimization    
+
+Readings
+
+* Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
+* Optional: [Orca: A Modular Query Optimizer Architecture for Big Data](./files/papers/orca.pdf)
+* Optional: [Cascades](./files/papers/cascades-graefe.pdf)
+* Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
+* Optional: [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
+* Optional: [CH Benchmark](https://db.in.tum.de/research/projects/CHbenCHmark/index.shtml?lang=en)
+
+
 <a name='colstore' />
 ### Column Stores    
 
@@ -134,19 +147,6 @@ Readings
 * Optional: [Choosing a Cloud DBMS](./files/papers/choosingclouddb.pdf)
 
 
-
-
-<a name='oltp' />
-### OLTP Stores    
-
-Readings
-
-* Required: [OLTP Through the Looking Glass, and What We Found There](./files/papers/oltpperf-sigmod08.pdf)
-* Optional: [Hekaton: SQL Server’s Memory-Optimized OLTP Engine](./files/papers/hekaton-sigmod13.pdf)
-* Optional: [The End of an Architectural Era](http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf)
-
-
-
 <a name='compilation' />
 ### Query Compilation    
 
@@ -164,6 +164,7 @@ Some things to think about when reading
 
 
 
+
 <a name='udfs' />
 ### Hybrid Caching/UDFs    
 
@@ -178,20 +179,6 @@ Readings
   * [Research Talk](https://www.youtube.com/watch?v=Xyvpcf2RtO4)
 * Optional: [Compiling PL/SQL Away](https://arxiv.org/pdf/1909.03291.pdf)
 * Optional: [Flare: Optimizing Apache Spark with Native Compilation](https://www.usenix.org/system/files/osdi18-essertel.pdf)
-
-
-
-<a name='cascades' />
-### Top-down Optimization    
-
-Readings
-
-* Required: [Volcano Optimizer](./files/papers/volcanooptimizer-icde93.pdf)
-* Optional: [Orca: A Modular Query Optimizer Architecture for Big Data](./files/papers/orca.pdf)
-* Optional: [Cascades](./files/papers/cascades-graefe.pdf)
-* Optional: [Cockroach blogpost: How we built a cost-based SQL optimizer](https://www.cockroachlabs.com/blog/building-cost-based-sql-optimizer/)
-* Optional: [Book: Inside the SQLServer Query Optimizer](./files/papers/inside-the-sql-server-query-optimizer.pdf)
-* Optional: [CH Benchmark](https://db.in.tum.de/research/projects/CHbenCHmark/index.shtml?lang=en)
 
 
 <a name='dataflow1' />
@@ -351,6 +338,18 @@ Paper Review
 
 <a name="optional" />
 ## Unscheduled Topics
+
+
+<a name='oltp' />
+### OLTP Stores    
+
+Readings
+
+* Required: [OLTP Through the Looking Glass, and What We Found There](./files/papers/oltpperf-sigmod08.pdf)
+* Optional: [Hekaton: SQL Server’s Memory-Optimized OLTP Engine](./files/papers/hekaton-sigmod13.pdf)
+* Optional: [The End of an Architectural Era](http://nms.csail.mit.edu/~stavros/pubs/hstore.pdf)
+
+
 
 
 <!--
