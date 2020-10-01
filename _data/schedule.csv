@@ -20,7 +20,7 @@ white,Thu 10-29,Maintaining Materialized Views,incmatviews,,,,
 white,Tue 11-10,Lineage,lineage,"Bonus: DB seminar talk by <a href=""http://people.cs.uchicago.edu/~aelmore/"">Aaron Elmore</a> (U Chicago) on CrocodileDB",,,
 white,Thu 11-12,Consistency under Replication,replication,,,,A5 (11/13 11:59pm)
 #fdf3fd,Tue 11-17,Optimistic and MVCC,occ,,,,
-#fdf3fd,Thu 11-19,tba,,,,,
+#fdf3fd,Thu 11-19,Query Compilation++,,,Junyoung,,
 white,Tue 11-24,tba,,,,,
 white,Thu 11-26,-,,,,,
 #fdf3fd,Tue 12-01,System R overview,sysr,,,,
