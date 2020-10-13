@@ -67,7 +67,7 @@ Tips:
 **Submission**
 
 1. Use the [report template on Overleaf](https://www.overleaf.com/read/phmrptrtjrhz)
-1. [Click here to submit](#)
+1. [Click here to submit your **4 -- 6 page** draft](#)
 
 
 
