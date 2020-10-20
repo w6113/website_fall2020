@@ -67,7 +67,8 @@ Tips:
 **Submission**
 
 1. Use the [report template on Overleaf](https://www.overleaf.com/read/phmrptrtjrhz)
-1. [Click here to submit your **4 -- 6 page** draft](#)
+1. [Click here to submit your **4 -- 6 page** draft](https://easychair.org/conferences/?conf=w611320)
+  * Please see [this draft from a previous class](https://www.dropbox.com/s/y460nkyi7pmnkre/example%20draft.pdf?dl=0) as an example.
 
 
 
