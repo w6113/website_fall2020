@@ -220,6 +220,12 @@ Some notes to guide your reading and thinking.
 * Optional: [Noria: dynamic, partially-stateful data-flow for high-performance web applications](https://pdos.csail.mit.edu/papers/noria:osdi18.pdf)
 * Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
 
+<a name="stream" />
+### Streaming
+
+* Required: [Aurora](http://cs.brown.edu/research/aurora/vldb03_journal.pdf)
+* Required: [Flink](http://www.vldb.org/pvldb/vol10/p1718-carbone.pdf)
+
 <a name="incmatviews" />
 ### Incrementally Maintaining Materialized Views
 

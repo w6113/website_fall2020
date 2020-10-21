@@ -13,7 +13,7 @@ white,Tue 10-13,Hybrid Caching/UDFs,udfs,"Bonus: DB seminar talk by <a href=""ht
 white,Thu 10-15,Batch Dataflow,dataflow1,,,,
 #fdf3fd,Tue 10-20,Incremental Dataflow,naiad,"Bonus: DB seminar talk by <a href=""https://www.microsoft.com/en-us/research/people/kokarana/"">Kostas Karanasos</a> (Microsoft Gray Labs) on Their lab and In-DBMS ML",,A4,A3  (10/21 11:59pm)
 #fdf3fd,Thu 10-22,Materialized Views,matviews,,,,
-white,Tue 10-27,Streaming DB Research,,Class is MOVED to Prof Vasiliki's talk at 4PM,"<a href=""https://cs-people.bu.edu/vkalavri/"">Prof. Vasiliki (Boston U)</a>",,
+white,Tue 10-27,Streaming DB Research,stream,Class is MOVED to Prof Vasiliki's talk at 4PM,"<a href=""https://cs-people.bu.edu/vkalavri/"">Prof. Vasiliki (Boston U)</a>",,
 white,Thu 10-29,Maintaining Materialized Views,incmatviews,,,,"<a href=""./projects#draft"">Paper Draft 11/29</a>"
 #fdf3fd,Tue 11-03,-,,,,,
 #fdf3fd,Thu 11-05,Datalog and Recursion,datalog,,,A5,A4 (11/06 11:59pm)
