@@ -18,9 +18,8 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 
 
 #### Recent Announcements
+* (10/22) The regular class on next Tuesday 10/27 will be replaced with a Guest Lecture about Streaming DB by Prof. Vasiliki at 4-5:30PM EST. Zoom link for the lecture is shared on slack and will be recorded. Paper reviews proceed as usual.
 * (10/01) Deadlines for A3-A5 have been pushed back.
-* (09/23) If you and/or your partner would like to lead one of the future classes, [fill out this google form](https://forms.gle/JWRuFCLaFPqK4QHw5).  The deadline is 9/29 11:59PM EST 
-* (09/23) Solution for A1 is released. A2 is released and due on a2 is due on 10/04.
 
 
 #### Tentative Schedule
