@@ -232,7 +232,7 @@ Some notes to guide your reading and thinking.
 * Required: [DBToaster](https://dbtoaster.github.io/papers/pvldb2012-dbtoaster.pdf)
   * Optional: [DBToaster talk](https://dbtoaster.github.io/papers/ecocloud2013-dbtoaster-mn.pdf)
   * Optional: [The theory](https://dbtoaster.github.io/papers/pods2010-ring.pdf)
-* Optional: [CrocodileDB: Efficient Database Execution through Intelligent Deferment](http://cidrdb.org/cidr2020/papers/p14-shang-cidr20.pdf)
+* Optional: [Intermittent Query Processing](http://www.vldb.org/pvldb/vol12/p1427-tang.pdf)
 
 
 <a name='datalog' />
