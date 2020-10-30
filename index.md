@@ -18,6 +18,7 @@ See [FAQ](./syllabus#faq) for difference between 6113 and the other database cou
 
 
 #### Recent Announcements
+* (10/30) PC Reviews are out. The first review will be due 11/06 10AM (due to election) while the second review will be due at the normal time 11/09 10AM
 * (10/22) The regular class on next Tuesday 10/27 will be replaced with a Guest Lecture about Streaming DB by Prof. Vasiliki at 4-5:30PM EST. Zoom link for the lecture is shared on slack and will be recorded. Paper reviews proceed as usual.
 * (10/01) Deadlines for A3-A5 have been pushed back.
 
