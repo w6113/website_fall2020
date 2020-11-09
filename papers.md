@@ -256,7 +256,7 @@ Readings:
 
 * Required: [Provenance Semirings](http://users.ics.forth.gr/~gregkar/publications/pods2007.pdf)
 * Optional: [SMOKE: Fine-grained Lineage at Interactive Speed](http://www.vldb.org/pvldb/vol11/p719-psallidas.pdf)
-
+* Optional: [Application of provenance to vis](https://www.dropbox.com/s/fkp5hk1gp4lrg9h/smoke-hilda18.pdf?dl=0)
 
 Question to comment on:
 
