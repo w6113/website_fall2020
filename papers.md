@@ -458,6 +458,13 @@ Address the following in your review's details:
   * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
   * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
 
+<a name="explanation" />
+### Explanation
+
+* Required: [Scorpion: Explaining away outliers in aggregate queries](http://sirrice.github.io/files/papers/scorpion-vldb13.pdf)
+* Optional: [DIFF: A Relational Interface for Large-Scale Data Explanation](http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf)
+* Optional: [Rain: Complaint-driven Training Data Debugging for Query 2.0](https://arxiv.org/pdf/2004.05722.pdf)
+
 
 
 <a name="pvd"/>
