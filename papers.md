@@ -273,6 +273,13 @@ Read one of the two required papers:
 * Optional: [Provenance for Interactive Visualizations](https://www.dropbox.com/s/32aid7isd2arx47/smoke-hilda18-cr.pdf?dl=0)
 * Optional: [Titian: Data Provenance Support in Spark](http://www.vldb.org/pvldb/vol9/p216-interlandi.pdf)
 
+<a name="occ"/>
+### Optimistic and Multiversion Concurrency Control
+
+* Required: [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
+* Optional: [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf)
+  * Concurrency control is hard, skim this paper to get a sense of the complexities.
+
 
 <a name="replication" />
 ### Distributed Consistency under Replication
@@ -283,6 +290,7 @@ Read one of the two required papers:
 * (Optional) [Raft Refloated](http://www.cl.cam.ac.uk/~ms705/pub/papers/2015-osr-raft.pdf) 
 * (Optional) [Google's Paxos Made LIve](https://research.google.com/archive/paxos_made_live.html)
 * (Optional) [Anna: A Crazy Fast, Super-Scalable, Flexibly Consistent KVS](https://rise.cs.berkeley.edu/blog/anna-kvs/)
+
 
 
 

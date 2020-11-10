@@ -19,7 +19,7 @@ white,Thu 10-29,Maintaining Materialized Views,incmatviews,,,,"<a href=""./proje
 #fdf3fd,Thu 11-05,Maintaining Materialized Views (continued),incmatviews,,,A5,A4 (11/06 11:59pm)
 white,Tue 11-10,Datalog and Recursion,datalog,"Bonus: DB seminar talk by <a href=""http://people.cs.uchicago.edu/~aelmore/"">Aaron Elmore</a> (U Chicago) on CrocodileDB",,,
 white,Thu 11-12,Lineage,lineage,,,,
-#fdf3fd,Tue 11-17,Optimistic and MVCC,occ,,,,
+#fdf3fd,Tue 11-17,Optimistic Concurrency Control,occ,,,,
 #fdf3fd,Thu 11-19,Query Compilation++,,,Junyoung,,A5 (11/20 11:59pm)
 white,Tue 11-24,Serverless Query Proc,serverless,,,,
 white,Thu 11-26,-,,,,,
