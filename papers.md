@@ -442,6 +442,7 @@ Readings
 
 * Required: [ObliDB](http://www.vldb.org/pvldb/vol13/p169-eskandarian.pdf)
 * Optional: [Efficient Oblivious Database Joins](http://www.vldb.org/pvldb/vol13/p2132-krastnikov.pdf)
+* Optional: [SMCQL: Secure Querying for Federated Databases](http://users.eecs.northwestern.edu/~jennie/pubs/smcql.pdf)
 
 <a name='eddies' />
 ### Eddies  

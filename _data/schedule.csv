@@ -21,11 +21,11 @@ white,Tue 11-10,Datalog and Recursion,datalog,"Bonus: DB seminar talk by <a href
 white,Thu 11-12,Lineage,lineage,,,,
 #fdf3fd,Tue 11-17,Optimistic and MVCC,occ,,,,
 #fdf3fd,Thu 11-19,Query Compilation++,,,Junyoung,,A5 (11/20 11:59pm)
-white,Tue 11-24,tba,,,,,
+white,Tue 11-24,Serverless Query Proc,serverless,,,,
 white,Thu 11-26,-,,,,,
-#fdf3fd,Tue 12-01,System R overview,sysr,,,,
-#fdf3fd,Thu 12-03,Ingres/Postgres,postgres,,,,
-white,Tue 12-08,Physical Database Design,pvd,,,,
+#fdf3fd,Tue 12-01,ML in DBs,mlindb,,,,
+#fdf3fd,Thu 12-03,Result Explanation,explanation,,,,
+white,Tue 12-08,Oblivious and Secure Querying,obliv,,,,
 white,Wed 12-09,-,,"Bonus: DSI Data for Good talk by <a href=""https://sites.google.com/site/congyu/home"">Cong Yu</a> (Google, Structured Data Group) on (TBD, fact checking or structured snippets?).",,,
-white,Thu 12-10,Presentations (10 min/group),,,,,Presentations (10 min/group
+white,Thu 12-10,Presentations (10 min/group),,,,,Presentations (10 min/group)
 #fdf3fd,Tue 12-14,-,,,,,Project Report
