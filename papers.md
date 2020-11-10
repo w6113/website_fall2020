@@ -380,7 +380,7 @@ Readings
 ### ML in DB
 
 * Required: [MAD Skills: New Analysis Practices for Big Data](http://db.cs.berkeley.edu/papers/vldb09-madskills.pdf)
-* Required: [Dan Olteanu's VLDB 2020 Keynote](https://www.youtube.com/watch?v=0ic0jMjOpM0) and skim [the paper](http://www.vldb.org/pvldb/vol13/p3502-olteanu.pdf)
+* Encouraged: [Dan Olteanu's VLDB 2020 Keynote](https://www.youtube.com/watch?v=0ic0jMjOpM0) and skim [the paper](http://www.vldb.org/pvldb/vol13/p3502-olteanu.pdf)
 * Optional: [Towards a Unified Architecture for in-RDBMS Analytics](https://cs.stanford.edu/people/chrismre/papers/bismarck.pdf)
 * Optional: [Learning Generalized Linear Models Over Normalized Data](http://pages.cs.wisc.edu/~jignesh/publ/GLMs-over-joins.pdf)
 
