@@ -368,8 +368,12 @@ Readings
 ### Serverless Querying
 
 * Required: [Cloudburst: Stateful Functions-as-a-Service](https://arxiv.org/abs/2001.04592)
-* Optional: [Autoscaling Tiered Cloud Storage in Anna](https://dsf.berkeley.edu/jmh/papers/anna_vldb_19.pdf)
+  * Using a distributed KV-store to autoscale stateful functions
 * Optional: [Starling: A Scalable Query Engine on Cloud Function Services](https://arxiv.org/pdf/1911.11727.pdf)
+  * Running OLAP on serverless
+* Optional: [Serverless Computing: One Step Forward, Two Steps Back](http://cidrdb.org/cidr2019/papers/p119-hellerstein-cidr19.pdf)
+* Optional: [Autoscaling Tiered Cloud Storage in Anna](https://dsf.berkeley.edu/jmh/papers/anna_vldb_19.pdf)
+  * The discributed KV-store used in Cloudburst
 
 
 <a name="mlindb" />
