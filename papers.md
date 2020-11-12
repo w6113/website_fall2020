@@ -464,6 +464,8 @@ Readings
 * Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
 * Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
 * Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
+* Optional: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
+
 
 Address the following in your review's details:
 
