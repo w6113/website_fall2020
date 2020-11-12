@@ -461,17 +461,13 @@ Readings
 
 Readings
 
-* Required: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
-* Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
-* Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
-* Optional: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
-
-
-Address the following in your review's details:
-
-* This question asks you to separate the ideas in eddies from its implementation.  Imagine eddies became the canonical engine design, and its _core ideas_ continued to be improved.
-  * Come up with the most interesting query/workload for which such an engine would really shine.  What are its properties?
-  * Come up with the most interesting query/workload that would cripple such an engine.  What are its properties?  
+* Required: [Micro Adaptivity in Vectorwise](https://dl.acm.org/doi/pdf/10.1145/2463676.2465292)
+* Optional: [Eddies: Continuously Adaptive Query Processing](./files/papers/eddies-sigmod00.pdf)
+* Optional: [Adaptive Execution of Compiled Queries](https://db.in.tum.de/~leis/papers/adaptiveexecution.pdf)
+* Old list
+  * Optional: [Survey: Adaptive Query Processing](https://www.nowpublishers.com/article/Details/DBS-001)
+  * Optional: [TelegraphCQ: Continuous Dataflow Processing for an Uncertain World](http://db.csail.mit.edu/madden/html/TCQcidr03.pdf)
+  * Optional: [Worst Case Optimal Joins](https://columbiadb.github.io/files/papers/optimaljoin.pdf)
 
 <a name="explanation" />
 ### Explanation
