@@ -277,6 +277,7 @@ Read one of the two required papers:
 ### Optimistic and Multiversion Concurrency Control
 
 * Required: [On Optimistic Methods for Concurrency Control](http://sites.fas.harvard.edu/~cs265/papers/kung-1981.pdf)
+* Optional: [Silo](http://people.csail.mit.edu/stephentu/papers/silo.pdf)
 * Optional: [An Empirical Evaluation of In-Memory Multi-Version Concurrency Control](http://www.vldb.org/pvldb/vol10/p781-Wu.pdf)
   * Concurrency control is hard, skim this paper to get a sense of the complexities.
 
