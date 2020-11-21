@@ -458,7 +458,7 @@ Readings
 * Optional: [SMCQL: Secure Querying for Federated Databases](http://users.eecs.northwestern.edu/~jennie/pubs/smcql.pdf)
 
 <a name='eddies' />
-### Eddies  
+### Adaptive Query Processing
 
 Readings
 

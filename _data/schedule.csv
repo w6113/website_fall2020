@@ -21,7 +21,7 @@ white,Tue 11-10,Datalog and Recursion,datalog,"Bonus: DB seminar talk by <a href
 white,Thu 11-12,Lineage,lineage,,,,
 #fdf3fd,Tue 11-17,Optimistic Concurrency Control,occ,,,,
 #fdf3fd,Thu 11-19,Serverless Query Proc,serverless,,,,A5 (11/20 11:59pm)
-white,Tue 11-24,???,,,Junyoung,,
+white,Tue 11-24,Adaptive Query Proc (no reviews),,,Junyoung,eddies,
 white,Thu 11-26,-,,,,,
 #fdf3fd,Tue 12-01,ML in DBs,mlindb,,,,
 #fdf3fd,Thu 12-03,Result Explanation,explanation,,,,
