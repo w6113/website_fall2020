@@ -101,6 +101,7 @@ Your presentation should cover (in content, not necessarily one slide for each p
 **Submission**
 
 * Submit URL to your group's [PDF file or google slides](https://forms.gle/Ck1FX3higgbVUHkA9)
+* Deadline for submission: Wednesday, 12/09/2021 10:00 AM
 
 
 
