@@ -82,8 +82,7 @@ Your presentation should be polished.  Since there is still time until the final
 
 Overall logitics
 
-* team will be given 10 minutes : 5 min presentation, 5 min q&a and feedbacks
-* 1 person teams: 5 min presentation, 4 min feedback
+* team will be given 10 minutes : 5-6 min presentation, 4 min q&a and feedbacks
 * Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5/6 minutes per practice :)*
 * Each team member should speak
 * Make sure all demos are embedded as GIFs or videos in your slides.
@@ -101,7 +100,7 @@ Your presentation should cover (in content, not necessarily one slide for each p
 
 **Submission**
 
-* Submit URL to your group's [PDF file or google slides](#)
+* Submit URL to your group's [PDF file or google slides](https://forms.gle/Ck1FX3higgbVUHkA9)
 
 
 
