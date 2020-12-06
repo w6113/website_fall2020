@@ -83,7 +83,7 @@ Your presentation should be polished.  Since there is still time until the final
 Overall logitics
 
 * team will be given 10 minutes : 5 min presentation, 5 min q&a and feedbacks
-* Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5/6 minutes per practice :)*
+* Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5 minutes per practice :)*
 * Each team member should speak
 * Make sure all demos are embedded as GIFs or videos in your slides.
 * Staff will host and share their screen; we will change slides on your behalf
@@ -101,7 +101,7 @@ Your presentation should cover (in content, not necessarily one slide for each p
 **Submission**
 
 * Submit URL to your group's [PDF file or google slides](https://forms.gle/Ck1FX3higgbVUHkA9)
-* Deadline for submission: Tuesday, 12/08/2021 11:59 PM
+* Deadline for submission: Tuesday, 12/08/2020 11:59 PM
 
 
 
