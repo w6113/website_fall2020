@@ -80,7 +80,7 @@ Your presentation should be polished.  Since there is still time until the final
 
 **Since you are presenting to your peers as well, make sure you give your colleagues enough context to understand your ideas.  In addition to _what_ you did, help your colleagues understand _why_ you made your specific choices, and provide examples.  It's better to make sure the audience learns a few specific ideas than try to say everything.**  Come to office hours or contact the staff if you would like feedback.
 
-Overall logitics
+Overall logistics
 
 * team will be given 10 minutes : 5 min presentation, 5 min q&a and feedbacks
 * Timing is strict since we have many groups.  *Practice ahead of time so your presentation is smooth!  Only takes 5 minutes per practice :)*

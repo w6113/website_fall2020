@@ -1,18 +1,21 @@
 from dateutil.parser import parse
 from datetime import *
 
-start = parse("09-08-2020")
-end = parse("12-15-2020")
+start = parse("09-09-2021")
+end = parse("12-13-2021")
 
 recess = [ ]
 
 holidays = [
-    parse("11-03-2020"),
-    parse("11-26-2020")
+    parse("11-01-2021"),
+    parse("11-02-2021"),
+    parse("11-24-2021"),
+    parse("11-25-2021"),
+    parse("11-26-2021")
 ]
 
 colors = [
-  "#fdf3fd", "white"
+  "#fdffe4", "white"
 ]
 
 j = 0
@@ -21,8 +24,15 @@ for i in xrange(150):
   d = start + timedelta(i)
   if d > end: break
   if recess and d >= recess[0] and d <= recess[1]: continue
-  #if d in holidays: continue
-  if d.weekday() in [1,3]: 
-    print """%s,%s,,,,,,""" % (colors[(j%4)/2], d.strftime("%a %m-%d"))
+
+  # 0 is monday
+  if d.weekday() in [0,2]: 
+    color = colors[(j%4)/2]
+    day = d.strftime("%a %m-%d")
+    title = ""
+    if d in holidays: 
+      title = "Holiday"
+
+    print """%s,%s,%s,,,,,""" % (color, day, title)
     j += 1
 
