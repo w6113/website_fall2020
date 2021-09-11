@@ -18,7 +18,7 @@ Percentages are of your total class grade.
 * Proposal    10-01   (5%)
 * Paper Draft   10-29  (10%)
 * Presentation  12-10  (10%)
-* Report        12-14   (40%)
+* Report        12-15   (40%)
 
 
 
@@ -104,7 +104,6 @@ Your presentation should cover (in content, not necessarily one slide for each p
 * Deadline for submission: Tuesday, 12/08/2020 11:59 PM
 
 
-
 ### Report/Camera Ready
 
 You will revise your draft and submit a conference-style report on your project, with **maximum length** of 12 pages. 
@@ -112,6 +111,7 @@ Because this report is the primary deliverable upon which you will be graded, **
 
 **Submission**
 
+* Deadline: Tuesday, December 15 2020
 * [Submit here.  Name your file UNI_UNI.pdf](https://www.dropbox.com/request/HzQwTw6CpdST28wMvyFS) 
 
 
