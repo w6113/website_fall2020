@@ -477,6 +477,9 @@ Readings
 * Required: [Scorpion: Explaining away outliers in aggregate queries](http://sirrice.github.io/files/papers/scorpion-vldb13.pdf)
 * Optional: [DIFF: A Relational Interface for Large-Scale Data Explanation](http://www.vldb.org/pvldb/vol12/p419-abuzaid.pdf)
 * Optional: [Rain: Complaint-driven Training Data Debugging for Query 2.0](https://arxiv.org/pdf/2004.05722.pdf)
+* Related codebases
+  * https://github.com/PiotrZakrzewski/macrobase-diff
+  * https://datools.readthedocs.io/en/latest/
 
 
 
