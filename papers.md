@@ -62,6 +62,7 @@ Some papers on reviewing papers
 
 * Optional: [Architecture of RDBMS Survey](./files/papers/archdbsys-fntdb07.pdf)
 * Optional: [What goes around comes around](./files/papers/whatgoesaround-stonebraker.pdf)
+* Optional: [Query Evaluation Techniques for Large Databases](https://dl.acm.org/doi/pdf/10.1145/152610.152611)
 
 
 <a name='indexes' />
