@@ -1,14 +1,10 @@
 #### Information 
 
 * [Eugene Wu](http://www.eugenewu.net) (Instructor)     
-  <small>OH: Tues 3-4PM</small>   
-* [Deka Auliya Akbar](https://dekauliya.me) (TA)     
-  <small>OH: Fri 5:30-7:30PM (tentative) </small>   
-* Class: T/Th 11:30-1PM
-* Recitation: T 2-3PM   
-  <small><a href="https://goo.gl/maps/voXFEY8DjseGCDkSA">113th and Morningside Dr</a></small>
+  <small>OH: TBA 421 Mudd</small>   
+* Class: Th 2-4PM
 * [Syllabus & FAQ](./syllabus)
-* [Slack](https://w6113-f20.slack.com)
+* [Slack](https://w6113-f22.slack.com)
 * [Project](./projects)
 * [Papers](./papers)
 * [Reviews Wiki](https://github.com/w6113/w6113.github.io/wiki)
@@ -28,8 +24,10 @@
   * Demo/Poster <small>10%</small>
   * Paper <small>40%</small>
 * [Participation](./syllabus#participation)  <small>10%</small>    
+<!--
 * [Paper Reviews](./papers) <small>10%</small>
 * [Assignments](./assignments) <small>15%</small>
+-->
 
 
 

@@ -162,6 +162,10 @@ There are many sources of potential research projects.  Here are some ideas:
 ## Project Suggestions
 
 
+TBA
+
+<!--
+
 ### Reproduce and Extend
 
 Many of the following can be done by extending Databass' functionality
@@ -192,13 +196,6 @@ Incremental computation ala DBToaster
 Access Methods
 
 * Databass only supports scans.  Extend Databass with different access methods and extend the optimizer to recognize and use those access methods.
-
-<!--
-Benchmarking
-
-* benchmark vega and diff dataflow, find benchmarks
--->
-
 
 
 ### Research Projects
@@ -383,12 +380,5 @@ Creating an evolved benchmark requires several steps:
 * Profit (actually, run a few database systems on the evolved benchmark).
 
 
-
-
-<!--
-
-rain
-
-IFC for concurrency control
-
 -->
+
