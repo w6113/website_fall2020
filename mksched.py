@@ -1,21 +1,17 @@
 from dateutil.parser import parse
 from datetime import *
 
-start = parse("09-09-2021")
-end = parse("12-13-2021")
+start = parse("01-19-2023")
+end = parse("05-01-2023")
 
 recess = [ ]
 
 holidays = [
-    parse("11-01-2021"),
-    parse("11-02-2021"),
-    parse("11-24-2021"),
-    parse("11-25-2021"),
-    parse("11-26-2021")
+    parse("03-16-2023")
 ]
 
 colors = [
-  "#fdffe4", "white"
+  "#ffe4fc", "white"
 ]
 
 j = 0
@@ -26,8 +22,8 @@ for i in xrange(150):
   if recess and d >= recess[0] and d <= recess[1]: continue
 
   # 0 is monday
-  if d.weekday() in [0,2]: 
-    color = colors[(j%4)/2]
+  if d.weekday() in [4]: 
+    color = colors[(j%2)]
     day = d.strftime("%a %m-%d")
     title = ""
     if d in holidays: 

@@ -382,3 +382,80 @@ Creating an evolved benchmark requires several steps:
 
 -->
 
+Topics
+
+Data Market Systems
+
+Natural Language to Interface Interactions
+
+Auto-tuning DBMS
+
+Query Workload Modeling and Generation
+
+
+Query from Text or Query From Speech:  Implement a system that converts input text into a SQL query over some database of interest.  Doing this in general is hard, but if you constrain yourself to a particular subset of query it should be possible.   One possible approach would be to adapt this method:  https://arxiv.org/abs/2004.13645.  Another approach would be to investigate the use of GPT-3 for this task and evaluate where it works and where it fails, possibly comparing to other libraries available online.
+
+Sampling over Data-Warehouses: Explore the use of random samples to evaluate SQL queries on read-only databases - how much faster can you get?  What approximation guarantees can you provide?  See for example WanderJoin, https://www.cse.ust.hk/~yike/sigmod16.pdf and BlinkDB  http://blinkdb.org
+
+Data Augmentation: Build a system which automatically finds and integrates related data sets (e.g., if you are looking at time series data about the energy consumption it might be interesting to correlate the data with the temperature data).  
+
+
+Spark Tuner: Develop a tool to auto-tune all the configuration parameters of Spark or another database / data processing tool, such as Postgres, MySQL, etc.  The objective of this tuning is to change parameters in a configuration file to achieve the best performance on a particular query workload (e.g., TPC-H.)
+
+
+Private Querying:  Use ideas from secure multiparty computation to allow two or more parties that have a partial view of a database to query the combined database without sharing information with each other.
+
+
+DB Audit: There is a lot of excitement about block-chains. However, blockchains are inherently not scalable and in many cases, the fully decentralization is not even needed. The goal of this project is to explore alternative ways to enable a full audit of a database system. See https://vineetp13.github.io/publications/2017-SIGMOD-Concerto-A%20High%20Concurrency%20Key-Value%20Store%20with%20Integrity.pdf for some inspiration
+
+
+Sorting and Join Benchmark: Sorting and joins are a key to most database systems. Benchmark various join and sorting algorithms on a single core and multi-core machines and with different types of data (ints, floats, strings) and see which algorithms work best for different settings.
+
+
+Query Performance Prediction: Collect training data of the form (query, execution time) and then fit a predictive ML model (e.g., a CNN), and see if you can predict the performance of new queries. Alternatively, see if you can produce a "progress bar" of the estimated time remaining to complete a query in a system like Postgres using some form of ML learning.
+
+
+ML Inside or Outside the DB: Look at running some collection of statistical or machine learning or other data analysis operations inside of a database, and compare their performance to running those algorithms by copying data out of the database and running in Matlab or some other programming language. See, for example Mad Lib.
+
+
+Efficient Parsing: Figure out novel ways to parse data from CVS, JSON, text into a database. See Filter Before You Parse: Faster Analytics on Raw Data with Sparser and Mison: A Fast JSON Parser for Data Analytics for inspiration. 
+
+
+Auto-cleaning database: A database that, based on user input, automatically "predicts" missing values in a column using a standard machine learning technique on the remaining columns. A more advanced version of this database can pick the most suited machine learning algorithm that best predicts missing values.
+
+
+Auto-admin tool: Design a tool that recommends a set of indices to build given a particular workload and a set of statistics in a database. Alternatively investigate the question of which materialized views to create in a data-warehousing system, such as C-Store.
+
+
+Out-of-core algorithms for Python Pandas. Python Pandas is one of the most broadly used libraries for querying data in CSV files. It only works when the datasets (called dataframes in Pandas lingo) fit in memory. In this project you design and implement algorithms to extend Pandas so it works when dataframes do not fit in the main memory of the machine. 
+
+“Buffer Pool” for Python Pandas. Many analysts waste lots of resources by re-reading dataframes to be processed with Pandas. What would a Buffer Pool for pandas look like? What’s the best way of integrating it in the library to improve resource efficiency while keeping the library as transparent as possible for the analysts? 
+
+
+Feature Engineering meets Data Discovery. Feature engineering is the task of selecting a good set of features to train a machine learning algorithm. Data discovery is the task of finding a narrow set of relevant datasets for a task among many datasets. This project consists of envisioning the advantages and potential disadvantages of including feature engineering tasks within an existing data discovery system we have built at the MIT Database group.
+
+
+Documenting Data with Code. Many datasets lie in the cloud or in data lakes without much structure to help users understand their purpose and their value. One can look at logs of usage, but these logs are typically siloed under the strict permissions of the sysadmins, so it’s hard to understand how other analysts have used those datasets before. What if we think of a dataset as not only the attributes and tuples it contains, but also the different queries that have executed on it? What if we had a repository for datasets similar to we have control version systems for code, and we used it to understand the many queries that run on the datasets? This project consists of building a library to commit, push, pull datasets to a common repository, and a way of associating queries to datasets. It also involves doing a study of potential use cases of the new library.
+
+
+
+Best-effort SQL query. To write a SQL query, an analyst must first know the schema on which the query is going to run (otherwise it is hard to define JOINs, for example). We have a data discovery system which can help users with writing an underspecified SQL query and then fill in the unknown values at runtime. This project consists of writing the “best-effort query language” and implementing the strategies to fill in the query at runtime. This would be implemented and contribute to an open source data discovery system we have built in-house.
+
+
+Performance engineering: Python Pandas vs PostgreSQL. New versions of Postgres promise important performance benefits. Python Pandas is not known for its speed, but for its usability. In this project, the goal is to understand very precisely where the bottlenecks are in both systems. Such a study should help answer questions such as: what is the main bottleneck in Pandas that prevents it from executing as fast as PostgreSQL 14? What if all data lives in memory?
+
+Finding data: based on a sketch of an ER schema, find data on the web to fill the schema with data. For example, you could envision that the user creates a simple relational schema with [temperature, state, date] and the system finds the according data using Google’s data search API.
+
+
+Learned Approximations: Develop a model which allows you to approximate visualizations (with error guarantees) as presented in http://idl.cs.washington.edu/papers/immens/ 
+
+Cross Platform Analytics: Develop a tool that makes it easier to work across structured CSV data in a blobstore (e.g., S3 Parquet format), a data warehouse (e.g., Redshift), and an RDBMS (e.g., Postgres).
+
+Data extraction from Wikipedia.  Build a supervised learning-based system to infer the content of Wikipedia info boxes from the articles they appear in.  It is possible GPT-3 might be able to perform this task well.
+
+Map annotation.  Build a system to extract metadata from imagery, e.g., speed limits from images on Google Street View, to add data to a road map, like OpenStreeetMaps.  You can use an existing tool, like https://cloud.google.com/vision/docs/ocr, to extract text or identify objects in images.
+
+Automatic Time-series Prediction
+Develop techniques to make the process of time-series forecasting easier. This includes data integration, automatic tuning, and the front-end. Prophet (or a similar tool) might be a good starting point https://github.com/facebook/prophet 
+
+
